@@ -12,6 +12,9 @@ class sitecontroller extends Controller
         $dtmenu = menu::paginate(5);
         return view('site.index',compact('dtmenu'));
     }
+    public function home(){
+        return view('member');       
+    }
     public function about(){
         return view('about');
     }

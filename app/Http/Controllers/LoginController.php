@@ -5,16 +5,30 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Str;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+
 
 class LoginController extends Controller
 {
 public function login(){
-    return view('login');
+    return view('login');  
 }
 
-public function home(){
-    return view('member');       
+public function actionlogin(Request $request)
+{
+    $data = [
+        'email' => $request->input('email'),
+        'password' => $request->input('password'),
+    ];
+
+    if (Auth::Attempt($data)) {
+        return redirect('home');
+    }else{
+        return back()->with('toast_error', 'Email / Password Salah!');
+    }
 }
+
+
 public function registrasi(){
     return view('registrasi');
 }
@@ -26,6 +40,6 @@ public function simpanregistrasi(Request $request){
         'password' => bcrypt($request->password),
         'remember_token'=>Str::random(60),             
     ]);
-    return view('login');
+    return redirect('login')->with('success', 'Akun Berhasil Ditambahkan!');
 }
 }

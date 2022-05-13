@@ -17,16 +17,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
+//route user
 Route::get('user',[sitecontroller::class,'index'])->name('user');
 Route::get('login',[LoginController::class,'login'])->name('login');
-Route::post('home',[LoginController::class,'home'])->name('home');
+Route::post('actionlogin', [LoginController::class, 'actionlogin'])->name('actionlogin');
+Route::get('home',[sitecontroller::class,'home'])->name('home');
 Route::get('registrasi',[LoginController::class,'registrasi'])->name('registrasi');
 Route::post('simpanregistrasi',[LoginController::class,'simpanregistrasi'])->name('simpanregistrasi');
 Route::get('about',[sitecontroller::class,'about'])->name('about');
 Route::get('contact',[sitecontroller::class,'contact'])->name('contact');
 Route::get('shop',[sitecontroller::class,'shop'])->name('shop');
 
+//route admin
 Route::get('admin',[BerandaController::class,'index'])->name('admin');
 Route::get('dtmenu',[AdminController::class,'index'])->name('dtmenu');
 Route::get('createdata',[AdminController::class,'create'])->name('createdata');

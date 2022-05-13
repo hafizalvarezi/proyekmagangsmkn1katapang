@@ -3,7 +3,8 @@
 <head>
   
     <title>Login</title>
- 
+
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
@@ -148,13 +149,14 @@ top: 89%;
 }
 
     </style>
+      
 </head>
 <body>
     <div class="background">
         <div class="shape"></div>
         <div class="shape"></div>
     </div>
-    <form action="{{route('home')}}" method ="post"> 
+    <form action="{{route('actionlogin')}}" method ="post"> 
     {{csrf_field()}}
         <h3>Welcome Back!</h3>
         <h5>Silahkan Login Untuk Melanjutkan</h5>
@@ -177,5 +179,6 @@ top: 89%;
 <a href="{{route('user')}}"style= "text-decoration: none;" ><h5>back</h5></a>
 </div>
   </form>
+  @include('sweetalert::alert')
 </body>
 </html>

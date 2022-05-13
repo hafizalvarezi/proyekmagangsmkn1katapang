@@ -276,7 +276,7 @@ footer{
 		<footer class="footer-distributed">
 		<div class="footer-left">
         <img src="../image/logo1.png">
-			<h3>About<span>PushTheme</span></h3>
+				<h3>About<span>PushTheme</span></h3>
 
 				<p class="footer-links">
 					<a href="#">Home</a>

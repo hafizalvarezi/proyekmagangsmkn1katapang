@@ -1,4 +1,4 @@
-
+<head>
 	<link rel="stylesheet" href="footer.css">
 	
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
@@ -6,19 +6,9 @@
 	<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
 
 </head>
-	<body>
-		<header>
-			<h1> Responsive Footer </h1>
-			<h2>Have a look</h2>
-			<h2><span>On Below Footer</span></h2>
-		</header>
-
-		<!-- The content of your page would go here. -->
-
-		<footer class="footer-distributed">
-
-			<div class="footer-left">
-          <img src="../image/logo1.png">
+<footer class="footer-distributed">
+		<div class="footer-left">
+        <img src="../image/logo1.png">
 				<h3>About<span>PushTheme</span></h3>
 
 				<p class="footer-links">
@@ -64,5 +54,4 @@
 				</div>
 			</div>
 		</footer>
-	</body>
 </html>
