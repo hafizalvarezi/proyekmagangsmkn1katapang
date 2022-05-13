@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <title>{{$title}}</title>
+    <link href="{{\Illuminate\Support\Facades\URL::asset('/css/app.css')}}" rel="stylesheet">
+    <meta charset="utf-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   </head>
+   <style>
+     .new{
+       position: absolute;
+       top: 0px;
+     }
+     </style>
+<body>
+  <nav>
+    <div class="menu">
+      <div class="logo">
+      <a href="{{route('user')}}">
+      <img src="../image/logo1.png" height="50"/>
+    </a>
+      </div>
+      <ul>
+      <li><a href="{{route('about')}}">About</a></li>
+        <li><a href="{{route('contact')}}">Contact</a></li>
+        <li><a href="{{route('login')}}">Login</a></li>
+        <li><a href="{{route('registrasi')}}">Join Now</a></li>
+      </ul>
+    </div>
+    {{$slot}}
+  </nav>
+ 
+  <!-- <a href="{{route('user')}}">
+  <img src  ="../image/Untitled-1-removebg-preview.png" class="new" width= "150px" height="50px">
+    </a> -->
+  </body>
+</html>
