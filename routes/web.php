@@ -44,6 +44,8 @@ Route::get('edit/{id}', [siswacontroller::class, 'showData']);
 Route::get('/list', [siswacontroller::class, 'list']);
 Route::get('/admin', [siswacontroller::class, 'index']);
 Route::get('/eg', [siswacontroller::class, 'eg']);
+Route::get('galeri1', [siswacontroller::class, 'galeri1']);
+Route::get('galeri2', [siswacontroller::class, 'galeri2']);
 
 //---POST---//
 Route::post('edit', [siswacontroller::class, 'update']);

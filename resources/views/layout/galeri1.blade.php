@@ -1,68 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="dash.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    
-    <title>About</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Galeri</title>
 </head>
 <body>
-<img class="title-satu" src="background/title.png" alt="">
-    <nav>
-        <label for="check">
-            <i class="fas fa-clock fa-xs"></i>
-        </label>
-        <ul>
-            <li><a style="text-decoration:none" href="/dashboard">Home</a></li>
-            <li><a style="text-decoration:none" class="active">About</a></li>
-            <li><a style="text-decoration:none" href="/contact">Contact</a></li>
-            <li><a style="text-decoration:none" href="/galeri">Galeri</a></li>
-            <li><a style="text-decoration:none" href="/mur">Daftar Siswa</a></li>
-        </ul>
-    </nav>
+    <h1 align="center">YANG PENTING BISA AJA DULU</h1>
+<!-- pagination -->
+<ul class="pagination">
+    <li class="page-item" ><a class="page-link" href="/galeri">1</a></li>
+    <li class="page-item"><a class="page-link" href="/galeri1">2</a></li>
+    <li class="page-item"><a class="page-link" href="/galeri2">3</a></li>
+  </ul>
 
-  <!-- Sejarah -->
-    <div class="card" style="width: 79rem;">
-  <div class="card-body">
-    <h5 class="card-title">Sejarah Singkat</h5>
-    <p class="card-text">SMKN 1 Katapang berdiri Tahun 1999 dengan nama SMKN 4 Soreang. Unit Gedung Baru (UGB) SMKN 1 Katapang dibangun dari dana proyek LOAN OCF yang merupakan bantuan Pemerintah Jepang. </p>
-
-<p>Tahun Pelajaran 1999/2000 mulai menerima siswa baru untuk Program Keahlian Teknologi Penyempurnaan Tekstil, Teknik Elektro dan Mesin Perkakas (pendaftar ada 150 dan yang diterima 144 orang siswa), pada waktu itu KBM dilaksanakan di SMPN 1 Katapang.</p>
-
-<p>Tahun Pelajaran 2000/2001 SMKN 4 Soreang mulai menempati Unit Gedung Baru yang berlokasi di Jalan Ceuri Terusan Kopo KM 13,5 Desa Katapang, Kecamatan Katapang Kabupaten Bandung.</p>
-
-<p>Pada waktu peresmian UGB SMKN 1 Katapang yang dihadiri oleh pejabat dari Dinas Pendidikan Provinsi dan Kabupaten, Pemerintah setempat dan tokoh masyarakat setempat pada tahun 2000, disepakati nama SMKN 4 Soreang menjadi SMKN 4 Katapang atas keinginan dari tokoh masyarakat bahwa nama SMKN 4 Soreang kurang sesuai karena berada di Kecamatan Katapang.</p>
-
-<p>Akhir Tahun 2000 keluar Surat Keputusan Ditpsmk Jakarta Nomor: 217/O/2000, tanggal 17 Nopember 2000, tentang pembukaan Sekolah yang menetapkan nama sekolah yang dulu bernama SMKN 4 Soreang secara resmi adalah SMKN 1 Katapang Kabupaten Bandung.</p>
-
-<p>Sejak tahun 1999 sampai sekarang siswa – siswa SMKN 1 Katapang banyak meraih prestasi terutama untuk perlombaan pramuka, baik tingkat Kabupaten Bandung maupun Provinsi Jawa Barat. Selain itu siswa - siswi SMKN 1 Katapang juga sering mewakili Kabupaten Bandung dalam LKS tingkat Provinsi dan Nasional.</p>
-  </div>
-</div><br>
-
-<!-- Misi -->
-
-<div class="card" style="width: 79rem;">
-  <div class="card-body">
-    <h5 class="card-title">Misi</h5>
-    <p class="card-text">1.Menerapkan manajemen pelayanan yang responsif dan akuntabel.</p>
-
-<p>2.Melaksanakan Pembelajaran inovatif dan profesional yang didukung oleh teknologi berdasarkan pada kearifan kebangsaan.</p>
-
-<p>3.Meningkatkan sumber daya manusia (SDM) yang sesuai dengan perkembangan zaman berdasarkan kearifan kebangsaan.</p>
-
-<p>4.Menghasilkan lulusan yang berkarakter unggul, kompetitif sebagai pemimpin di masa depan.</p>
-
-<p>5.Menyiapkan Lulusan yang peduli terhadap sesama manusia dan lingkungannya</p>
-
-  </div>
-</div>
-<!-- Footer -->
-
-<div class="footer">
+<!-- footer -->
+    <div class="footer">
   <footer class="row row-cols-5 py-5 my-5 border-top">
     <div class="col">
     <img align =""src="background/ktpang.png" class="card-img-top" alt="..." style="width: 85px" height="85px">
@@ -118,6 +76,5 @@
       </ul>
     </div>
   </footer>
-</div>
 </body>
 </html>

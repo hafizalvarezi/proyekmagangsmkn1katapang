@@ -66,6 +66,17 @@ class siswacontroller extends Controller
         $data->delete();
         return redirect('list');
     }
+
+    function galeri1()
+    {
+        return view('layout.galeri1');
+    }
+
+    function galeri2()
+    {
+        return view('layout.galeri2');
+    }
+
     function showData($id)
     {
         $data= siswa::find($id);
