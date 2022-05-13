@@ -84,8 +84,7 @@
 </div>
 <br>
 <br>
-<?php include '../layout_admin/footer.blade.php'; ?>
-<!-- <div class="menu">
+<div class="menu">
 <div class='sosmed'>
 <h4>Kami ingin tetap terhubung dengan Anda! Silakan ikuti kami di media sosial sehingga kami dapat tetap terhubung dengan anda.</h4>
 <ul class="lsosmed">
@@ -109,4 +108,4 @@
 </ul>
 </div>
 </div>
-</div> -->
+</div>

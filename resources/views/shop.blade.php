@@ -15,10 +15,8 @@
 <body>
   <nav>
     <div class="menu">
-    <div class="logo">
-      <a href="{{route('user')}}">
-      <img src="../image/logo1.png" height="50"/>
-    </a>
+      <div class="logo">
+        <a href="{{route('user')}}">Senja Kopi</a>
       </div>
       <ul>
       <li><a href="{{route('about')}}">About</a></li>

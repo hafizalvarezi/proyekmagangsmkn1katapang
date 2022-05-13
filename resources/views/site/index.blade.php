@@ -5,7 +5,7 @@
     <table class="tabel" width="450px" style="background-color: black;" border="3" cellpadding= "3" cellspacing= "0">
     
     <tr align="center">     
-      <td>No</td>
+      <td>No Kopi</td>
       <td>Menu</td>
       <td>Harga</td>
     </tr>   

@@ -20,7 +20,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('user',[sitecontroller::class,'index'])->name('user');
 Route::get('login',[LoginController::class,'login'])->name('login');
-Route::post('home',[LoginController::class,'home'])->name('home');
+Route::post('actionlogin', [LoginController::class, 'actionlogin'])->name('actionlogin');
+Route::get('home',[sitecontroller::class,'home'])->name('home');
 Route::get('registrasi',[LoginController::class,'registrasi'])->name('registrasi');
 Route::post('simpanregistrasi',[LoginController::class,'simpanregistrasi'])->name('simpanregistrasi');
 Route::get('about',[sitecontroller::class,'about'])->name('about');
