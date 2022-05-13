@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/9d085cb130.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="admin.css">
+    <script src="jquery.js"></script>
     <title>Dashboard</title>
 </head>
 <body>
@@ -49,22 +50,27 @@
             <div class="tinot">
                 <h2><i class="fa-solid fa-bell"></i> Notifikasi</h2>
             </div>
+            <script src="jquery.js"></script>
             <div class="not-1">
-            <table class="adm1" border="1px" align="center" width="700">
-                <tr align="center">
-                    <th>NAMA</th>
-                    <th>KELAS/GURU MAPEL</th>
-                    <th>EMAIL</th>
-                    <th>PESAN</th>
-                </tr>
+            <table class="adm1" border="1px" align="center">
+                <thead>
+                    <tr align="center">
+                        <th>NAMA</th>
+                        <th>KELAS/GURU MAPEL</th>
+                        <th>EMAIL</th>
+                        <th>PESAN</th>
+                    </tr>
+                </thead>
+                <tbody>
                 @foreach ($dtsiswa as $item)
-                <tr align="center">
-                    <td>{{$item->namleng}}</td>
-                    <td>{{$item->kls}}</td>
-                    <td class="em">{{$item->email}}</td>
-                    <td class="tb1">{{$item->pesan}}</td>
-                </tr>
+                    <tr align="center">
+                        <td>{{$item->namleng}}</td>
+                        <td>{{$item->kls}}</td>
+                        <td class="em">{{$item->email}}</td>
+                        <td class="tb1">{{$item->pesan}}</td>
+                    </tr>
                 @endforeach
+                </tbody>
                 </table>
             </div>
         </div>

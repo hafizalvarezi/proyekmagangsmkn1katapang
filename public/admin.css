@@ -13,7 +13,7 @@ body{
     background: linear-gradient(rgba(118,184,213,0.92));
 }
 html, body {
-    margin: 0; height: 100%; overflow: hidden
+    margin: 0; height: 100%;
 }
 .title{
     color: white;
@@ -97,6 +97,16 @@ html, body {
     text-size-adjust: 150px;
     text-align: center;
 }
+.not-1{
+    overflow: auto;  
+}
+.not-1 thead th {
+    position: sticky;
+}
+.adm1 th,td {
+  padding: 8px 16px;
+  border: 1px solid #ccc;
+}
 .adm1{
     background: #5463FF;
     color: white;
@@ -104,13 +114,17 @@ html, body {
     border-collapse: collapse;
     position: absolute;
     right: 0px;
-    top: 200px;
+    top: 205px;
     empty-cells: show;
-    width: 1116px;
-    table-layout: fixed;  
+    width: 1117px;
+    height: 90px;
+    table-layout: fixed;
+    border-collapse: collapse;
+    overflow: scroll;
 }
-.adm1, th{
-    letter-spacing: 1px;
+.adm1 tbody{
+    width: 1117px;
+    height: 90px;
 }
 tr:hover {
     background-color: coral;
