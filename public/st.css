@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(/background/ks.jpeg);
+    background-size: auto;
+}
+h1{
+    color: white;
+}
+.btn:hover{
+    position: absolute;
+    right: 12px;
+}
