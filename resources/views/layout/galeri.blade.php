@@ -74,7 +74,7 @@ Lapangan di SMKN 1 Katapang ada 2.Yang pertama sering dipakai untuk upacara dan 
                     <div class="text-center">
   <img src="foto/f5.jpg" class="rounded"  height="200px" width="300px">
  <h3>Prestasi</h3>
- Prestasi belajar adalah sesuatu hasil yang telah dicapai oleh seorang murid setelah melakukan perubahan cara belajar baik di dalam sekolah ataupun di luar sekolah.</div>
+ Prestasi belajar adalah sesuatu hasil yang telah dicapai oleh seorang murid setelah melakukan perubahan cara belajar baik di dalam sekolah.</div>
                     </div>
                 </div>
                 </div>
@@ -86,8 +86,8 @@ Lapangan di SMKN 1 Katapang ada 2.Yang pertama sering dipakai untuk upacara dan 
                     <div class="card-body text-center">
                     <div class="text-center">
   <img src="foto/tkj.png" class="rounded"  height="200px" width="250px">
- <h3>Teknik Komputer dan Jaringan</h3>
- Teknik Komputer dan Jaringan merupakan ilmu berbasis Teknologi Informasi dan Komunikasi terkait kemampuan algoritma,perakitan komputer.</div>
+ <h3>Teknik Komputer Jaringan</h3>
+ Teknik Komputer dan Jaringan merupakan ilmu berbasis Teknologi Informasi dan Komunikasi terkait kemampuan algoritma, dan pemrograman komputer,dan pengoperasian perangkat lunak.</div>
                     </div>
                 </div>
             </div>
@@ -100,7 +100,7 @@ Lapangan di SMKN 1 Katapang ada 2.Yang pertama sering dipakai untuk upacara dan 
                     <div class="text-center">
   <img src="foto/rpl.png" class="rounded"  height="200px" width="250px">
  <h3>Rekayasa Perangkat Lunak</h3>
- Rekayasa Perangkat Lunak adalah satu bidang profesi yang mendalami cara-cara pengembangan perangkat lunak termasuk pembuatan,dan pemeliharaan.</div>
+ Rekayasa Perangkat Lunak adalah profesi yang mendalami cara-cara pengembangan perangkat lunak termasuk pembuatan,dan manajemen organisasi pengembangan perangkat lunak.</div>
                     </div>
                 </div>
                 </div>
@@ -111,9 +111,9 @@ Lapangan di SMKN 1 Katapang ada 2.Yang pertama sering dipakai untuk upacara dan 
                     <div class="card-header" align="center">Kompetensi Favorit</div>
                     <div class="card-body text-center">
                     <div class="text-center">
-  <img src="foto/mm.png" class="rounded"  height="210px" width="270px">
+  <img src="foto/mm.png" class="rounded"  height="200px" width="250px">
  <h3>MultiMedia</h3>
- Multimedia adalah jurusan komputer untuk menyajikan dan menggabungkan teks, suara, gambar, animasi, audio, dan video dengan alat bantu,tautan sehingga pengguna dapat melakukan navigasi.</div>
+ Multimedia adalah jurusan komputer untuk menyajikan dan menggabungkan teks, suara, gambar, animasi, audio, dan video dengan alat bantu.</div>
                     </div>
                 </div>
                 </div>
@@ -121,10 +121,12 @@ Lapangan di SMKN 1 Katapang ada 2.Yang pertama sering dipakai untuk upacara dan 
 </div>
 
 <!-- pagination -->
-  <ul class="pagination">
+  <br><ul class="pagination">
+    <li class="page-item"><a class="page-link" href="#"><</a></li>
     <li class="page-item" ><a class="page-link" href="/galeri">1</a></li>
     <li class="page-item"><a class="page-link" href="/galeri1">2</a></li>
     <li class="page-item"><a class="page-link" href="/galeri2">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">></a></li>
   </ul>
 <!-- Footer -->
 

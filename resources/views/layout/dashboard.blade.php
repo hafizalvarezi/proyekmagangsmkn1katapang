@@ -25,7 +25,7 @@
         </ul>
     </nav>
 
-    <div class="container">
+    
     <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -38,7 +38,7 @@
       <div class="carousel-caption d-none d-md-block">
         <h1 class="text-white"><b>SMK TERBAIK</b></h1>
         <h2 class="text-white"><b>SMKN 1 Katapang membangun masa depan yang lebih baik melalui pendidikan, sesuai dengan tujuan Undang Undang Sistem Pendidikan Nasional</b></h2>
-     <a style="text-decoration:none" href="/about">About SMKN 1 Katapang</a>
+     <a class="btn btn-dark" style="text-decoration:none" href="/about">About SMKN 1 Katapang</a>
       </div>
     </div>
     <div class="carousel-item" data-bs-interval="2000">
@@ -46,7 +46,7 @@
       <div class="carousel-caption d-none d-md-block">
       <h1 class="text-white"><b>Lulusan Siap Kerja</b></h1>
         <h2 class="text-white"><b>SMKN 1 Katapang memiliki 9 kompetensi keahlian yang dapat dipilih siswa, serta waktu belajar 3 tahun dan 4 tahun sehingga lulus SMKN 1 Katapang lebih siap memasuki dunia kerja</b></h2>
-        <a style="text-decoration:none" href="/galeri">Kompetensi Terfavorit</a>
+        <a class="btn btn-dark" style="text-decoration:none" href="/galeri">Kompetensi Terfavorit</a>
       </div>
     </div>
     <div class="carousel-item">
@@ -54,7 +54,7 @@
       <div class="carousel-caption d-none d-md-block">
         <h1 class="text-white"><b>Sekolah Dimana Sama Saja</b></h1>
         <h2 class="text-white"><b>SMKN 1 Katapang mampu mengembangkan potensi peserta didik untuk kopetensi keahlianTeknik Elektronika Industri, Teknik Pemesinan, Teknik Kendaraan Ringan, Teknologi Penyempurnaan Tekstil, Teknik Komputer Jaringan, Rekayasa Perangkat Lunak, Teknik Gambar Mesin dan Mekatronika</b></h2>
-        <a style="text-decoration:none" href="#">Daftar Sekolah</a>
+        <a class="btn btn-dark" style="text-decoration:none" href="#">Daftar Sekolah</a>
       </div>   
      </div>
   </div>
@@ -66,7 +66,25 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
-</div>
+</div><br>  
+
+<!-- brosur -->
+<div class="card mb-3" style="max-width: 1240px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="foto/yow.png" alt="not foud">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h2 class="text-light" align="center">"SEKOLAH DIMANA SAJA SAMA"</h2>
+        <h1 class="text-info">Informasi Resmi PPDB 2022 SMK</h1>
+        <h4 class="text-white-50" "align="center"> Dapat diakses melalui website resmi PPDB Disdik Jabar</h4>
+        <div class="button">
+        <button type="button" class="btn btn-dark"> <a href="#" >https://ppdb.disdik.jabarprov.go.id</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 <!-- Footer -->
 

@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color: bisque;
+    background-color: aliceblue;
     background-size: cover;
     font-family: montserrat;
     background-color: #2c3e50;
@@ -139,7 +139,7 @@ footer {
     text-align: center;
     background-color: #1A132F;
     color: white;
-    top: 200%;
+    top: 215%;
 }
 .teks{
     color: white;
@@ -150,6 +150,30 @@ footer {
 }
 .pagination{
     background-color: white;
-    
-
+    position: absolute;
+    left: 83%;
 }
+
+.pagination1{
+    background-color: white;
+    position: absolute;
+    left: 83%;
+}
+
+.button{
+   position: absolute;
+   left: 52%;
+   top: 73%;
+}
+.card.mb-3{
+    background-image: linear-gradient(90deg, #B92B27, #1565C0);
+}
+.text-info{
+ font-size: 90px;  
+ font-style: italic;
+}
+.text-primary{
+    font-size: 40px;
+    font-style: oblique;
+}
+

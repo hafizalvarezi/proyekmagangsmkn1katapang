@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="dash.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,12 +12,121 @@
     <title>Galeri</title>
 </head>
 <body>
-    <h1 align="center">YANG PENTING BISA AJA DULU</h1>
+  <!-- navbar -->
+<img class="title-satu" src="background/title.png" alt="">
+<nav>
+<a style="text-decoration:none" href="https://thohirdev.com"></a>
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fas fa-clock fa-xs"></i>
+        </label>
+        
+        <ul>
+            <li><a style="text-decoration:none" href="/dashboard">Home</a></li>
+            <li><a style="text-decoration:none" href="/about">About</a></li>
+            <li><a style="text-decoration:none" href="/contact">Contact</a></li>
+            <li><a style="text-decoration:none" href="/galeri" class="active">Galeri</a></li>
+            <li><a style="text-decoration:none" href="/mur">Daftar Siswa</a></li>
+        </ul>
+    </nav>
+        </div>
+    </div>
+
+    <!-- card 1 -->
+    <a style="text-decoration:none" href="https://thohirdev.com"></a>
+    <div class="container-xl px-4 mt-4">
+    <form action="/edit" method="POST">
+        {{csrf_field()}}
+        <hr class="mt-0 mb-4">
+        <div class="row">
+            <div class="col-xl-4">
+                <div class="card mb-4 mb-xl-0">
+                    <div class="card-header" align="center">Murid</div>
+                    <div class="card-body text-center">
+                    <div class="text-center">
+  <img src="foto/hah.jpg" class="rounded"  height="200px" width="300px">
+ <h3> Murid</h3>
+ Murid biasanya digunakan untuk seseorang yang mengikuti suatu program pendidikan di sekolah atau lembaga pendidikan lainnya, di bawah bimbingan seorang atau beberapa guru. 
+</div>
+                    </div>
+                </div><br>
+            </div>
+
+<!-- card 2 -->
+
+<div class="col-xl-4">
+                <div class="card mb-4 mb-xl-0">
+                    <div class="card-header" align="center">Kelas</div>
+                    <div class="card-body text-center">
+                    <div class="text-center">
+  <img src="foto/f2.jpg" class="rounded"  height="200px" width="300px">
+ <h3>Kelas</h3>
+ Kelas dalam pendidikan memiliki sejumlah arti terkait. Kelas dapat berarti sekelompok murid yang menghadapi pelajaran ataupun kuliah tertentu di perguruan tinggi, sekolah,dan lembaga pendidikan.</div>
+                    </div>
+                </div>
+                </div>
+
+<!-- card 3 -->
+<div class="col-xl-4">
+                <div class="card mb-4 mb-xl-0">
+                    <div class="card-header" align="center">Guru</div>
+                    <div class="card-body text-center">
+                    <div class="text-center">
+  <img src="foto/rrjpg.jpg" class="rounded"  height="200px" width="300px">
+ <h3>Guru</h3>
+ Guru adalah seorang pengajar suatu ilmu. Dalam bahasa Indonesia, guru umumnya merujuk pendidik profesional dengan tugas utama mendidik, mengajar, membimbing,dan mengarahkan.</div>
+                    </div>
+                </div>
+                </div>
+<!-- card 4 -->
+<div class="col-xl-4">
+                <div class="card mb-4 mb-xl-0">
+                    <div class="card-header" align="center">Tempat Praktik</div>
+                    <div class="card-body text-center">
+                    <div class="text-center">
+  <img src="foto/tkjt.jpg" class="rounded"  height="200px" width="250px">
+ <h3>Teknik Komputer Jaringan</h3>
+ Teknik Komputer dan Jaringan merupakan ilmu berbasis Teknologi Informasi dan Komunikasi terkait kemampuan algoritma, dan pemrograman komputer,dan pengoperasian perangkat lunak.</div>
+                    </div>
+                </div>
+            </div>
+
+<!-- card 5 -->
+<div class="col-xl-4">
+                <div class="card mb-4 mb-xl-0">
+                    <div class="card-header" align="center">Tempat Praktik</div>
+                    <div class="card-body text-center">
+                    <div class="text-center">
+  <img src="foto/rpll.jpg" class="rounded"  height="200px" width="250px">
+ <h3>Rekayasa Perangkat Lunak</h3>
+ Rekayasa Perangkat Lunak adalah profesi yang mendalami cara-cara pengembangan perangkat lunak termasuk pembuatan,dan manajemen organisasi pengembangan perangkat lunak.</div>
+                    </div>
+                </div>
+                </div>
+
+<!-- card 6 -->            
+<div class="col-xl-4">
+                <div class="card mb-4 mb-xl-0">
+                    <div class="card-header" align="center">Tempat Praktik</div>
+                    <div class="card-body text-center">
+                    <div class="text-center">
+  <img src="foto/mmm.jpg" class="rounded"  height="200px" width="250px">
+ <h3>MultiMedia</h3>
+ Multimedia adalah jurusan komputer untuk menyajikan dan menggabungkan teks, suara, gambar, animasi, audio, dan video dengan alat bantu.</div>
+                    </div>
+                </div>
+                </div>
+                </form>
+</div>
+
+
 <!-- pagination -->
-<ul class="pagination">
+<br><ul class="pagination">
+    <li class="page-item"><a class="page-link" href="#"><</a></li>
     <li class="page-item" ><a class="page-link" href="/galeri">1</a></li>
     <li class="page-item"><a class="page-link" href="/galeri1">2</a></li>
     <li class="page-item"><a class="page-link" href="/galeri2">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">></a></li>
   </ul>
 
 <!-- footer -->

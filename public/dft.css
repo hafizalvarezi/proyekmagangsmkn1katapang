@@ -69,3 +69,8 @@ button:hover {
       width: 100%;
     }
   }
+
+.card1{
+  position: absolute;
+  left: 4%;
+}
