@@ -139,7 +139,7 @@ footer {
     text-align: center;
     background-color: #1A132F;
     color: white;
-    top: 215%;
+    top: 200%;
 }
 .teks{
     color: white;
@@ -151,7 +151,7 @@ footer {
 .pagination{
     background-color: white;
     position: absolute;
-    left: 83%;
+    left: 88%;
 }
 
 .pagination1{
@@ -167,6 +167,8 @@ footer {
 }
 .card.mb-3{
     background-image: linear-gradient(90deg, #B92B27, #1565C0);
+    position: absolute;
+    top: 128%;
 }
 .text-info{
  font-size: 90px;  

@@ -122,11 +122,9 @@ Lapangan di SMKN 1 Katapang ada 2.Yang pertama sering dipakai untuk upacara dan 
 
 <!-- pagination -->
   <br><ul class="pagination">
-    <li class="page-item"><a class="page-link" href="#"><</a></li>
-    <li class="page-item" ><a class="page-link" href="/galeri">1</a></li>
+    <li class="page-item active" ><a class="page-link" href="/galeri">1</a></li>
     <li class="page-item"><a class="page-link" href="/galeri1">2</a></li>
     <li class="page-item"><a class="page-link" href="/galeri2">3</a></li>
-    <li class="page-item"><a class="page-link" href="#">></a></li>
   </ul>
 <!-- Footer -->
 

@@ -8,15 +8,15 @@ use Illuminate\Database\Eloquent\Model;
 class siswa extends Model
 {
     protected $table = 'murid';
-    protected $fillable = [
-        'nis',
-        'nama',
-        'askol',
-        'jkel',
-        'jrs',
-        'ttg',
-        'bulan',
-        'tahun',
-    ];
+    // protected $fillable = [
+    //     'nis',
+    //     'nama',
+    //     'jkel',
+    //     'jrs',
+    //     'ttg',
+    //     'bulan',
+    //     'tahun',
+    // ];
+    protected $guarded = [];
     public $timestamps=false;
 }

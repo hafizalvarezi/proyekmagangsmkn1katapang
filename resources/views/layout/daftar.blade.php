@@ -23,9 +23,6 @@
     <label for="nama"><b>Nama</b></label>
     <input type="text" placeholder="Masukan nama Siswa" name="nama" required>
 
-    <label for="askol"><b>Asal Sekolah</b></label><br>
-    <input type="text" placeholder="Asal Sekolah" name="askol" required>
-
     <label for="jkel"><b>Jenis Kelamin :</b></label><br>
     <input type="radio" name="jkel" value="Laki Laki" id="Laki Laki" >Laki Laki</input><br>
     <input type="radio" name="jkel" value="Perempuan" id="Perempuan" >Perempuan</input><br>

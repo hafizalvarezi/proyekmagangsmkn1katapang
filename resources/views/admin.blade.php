@@ -29,7 +29,7 @@
                 <li>
                     <a href="/set">
                         <span class="icon"><i class="fa-solid fa-sliders"></i></span>
-                        <span class="btn3">&nbsp; Pengaturan</span>
+                        <span class="btn3">&nbsp; Keuangan</span>
                     </a>
                 </li>
             </ul>

@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/9d085cb130.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="list.css">
-    <title>List Data Siswa</title>
+    <title>Dashboard</title>
 </head>
 <body>
-<div class="sidebar">
+    <div class="container">
+        <div class="sidebar">
             <h1 class="title">SMKN 1 KATAPANG</h1>
             <h4 class="title2">Selamat Datang di Halaman Admin</h4>
             <ul>
@@ -20,7 +21,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="/siswa">
+                    <a href="/list">
                         <span class="icon"><i class="fa-solid fa-address-card"></i></i></span>
                         <span class="btn2">&nbsp; List Data Siswa</span>
                     </a>
@@ -28,7 +29,7 @@
                 <li>
                     <a href="/set">
                         <span class="icon"><i class="fa-solid fa-sliders"></i></span>
-                        <span class="btn3">&nbsp; Pengaturan</span>
+                        <span class="btn3">&nbsp; Keuangan</span>
                     </a>
                 </li>
             </ul>
@@ -39,12 +40,9 @@
                 </form>
             </div>
         </div>
-        <div class="titled">
-            <div class="daf">
-                <h1>List Data Siswa</h1>
-            </div>
-        </div>
-        <div class="but">
+        <div class="huhe">
+            <div class="tuing">
+            <div class="but">
             <a href="{{route('daftar')}}"><button type="button" class="dft">Daftarkan Siswa</button></a>
         </div>
         <div class="table">
@@ -53,7 +51,6 @@
                     <td>ID</td>
                     <td>NIS</td>
                     <td>Nama</td>
-                    <td>Asal Sekolah</td>
                     <td>Jenis Kelamin</td>
                     <td>Jurusan</td>
                     <td>Tanggal Lahir</td>
@@ -64,7 +61,6 @@
                     <td>{{$item['id']}}</td>
                     <td>{{$item->nis}}</td>
                     <td>{{$item->nama}}</td>
-                    <td>{{$item->askol}}</td>
                     <td>{{$item->jkel}}</td>
                     <td>{{$item->jrs}}</td>
                     <td>{{$item->ttg}} {{$item->bulan}} {{$item->tahun}}</td>
@@ -72,5 +68,8 @@
                 </tr>
                 @endforeach
             </table>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

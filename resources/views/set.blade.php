@@ -29,7 +29,7 @@
                 <li>
                     <a href="/set">
                         <span class="icon"><i class="fa-solid fa-sliders"></i></span>
-                        <span class="btn3">&nbsp; Pengaturan</span>
+                        <span class="btn3">&nbsp; Keuangan</span>
                     </a>
                 </li>
             </ul>
@@ -42,7 +42,32 @@
         </div>
         <div class="huhe">
             <div class="tuing">
-                <h1>Halaman Pengaturan</h1>
+                <h1>HALAMAN KEUANGAN</h1>
+            </div>
+            <a href="{{route('uang')}}"><button type = "button" class="btnlog1">Bayar</button></a>
+        </div>
+        <div class="not">
+            <div class="tinot">
+                <h2><i class="fa-solid fa-bell"></i> Notifikasi</h2>
+            </div>
+            <div class="not-1">
+            <table class="adm1" border="1px" align="center" width="700">
+                <tr align="center">
+                    <th>NIS</th>
+                    <th>HARGA</th>
+                    <th>KETERANGAN</th>
+                </tr>
+                @foreach ($data as $item)
+                <tr align="center">
+                    <td>{{$item->id_siswa}}</td>
+                    <td>{{$item->harga}}</td>
+                    <td class="em">{{$item->keterangan}}</td>
+                </tr>
+                @endforeach
+                </table>
+                <div class="page">
+{{ $data->links() }}
+</div>
             </div>
         </div>
     </div>

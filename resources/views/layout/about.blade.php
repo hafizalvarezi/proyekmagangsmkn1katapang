@@ -11,8 +11,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <title>SMKN 1 KATAPANG</title>
+    <style>
+body {
+  background-image: linear-gradient(to right, red,black);
+}
+</style>
 </head>
 <body>
+  
 <img class="title-satu" src="background/title.png" alt="">
     <nav>
         <input type="checkbox" id="check">
@@ -28,6 +34,8 @@
         </ul>
     </nav>
 
+    <!-- misi -->
+    
     <!-- sejarah -->
     <div class="card1" style="width: 1300px">
   <div class="card-body">
@@ -46,21 +54,20 @@
 
 </div>
     </div>
-
-    <!-- misi -->
+    
    <div class="crd">
-    <div class="card" style="width: 620px" height="200px">
-  <div class="card-body">
+    <div class="card" style="width: 620px" height="200px">  
+    <div class="card-body">
   <h5 class="card-title" align="center">Misi</h5>
-    <p class="card-text">1.Menerapkan manajemen pelayanan yang responsif dan akuntabel.</p>
+    <p class="card-text">1. Mengembangkan kebijakan pendidikan nasional dan kurikulum sekolah yang berparadigma lingkungan hidup serta berkelanjutan.</p>
 
-<p>2.Melaksanakan Pembelajaran inovatif dan profesional yang didukung oleh teknologi berdasarkan pada kearifan kebangsaan.</p>
+<p>2.Membina karakter peserta didik menjadi pribadi yang berakhlak Baik.</p>
 
-<p>3.Meningkatkan sumber daya manusia (SDM) yang sesuai dengan perkembangan zaman berdasarkan kearifan kebangsaan.</p>
+<p>3.Mendidik dan melatih peserta didik memiliki keterampilan abad 21 (Komunikasi, Kolaborasi, Berpikir kritis dan Kreatif).</p>
 
-<p>4.Menghasilkan lulusan yang berkarakter unggul, kompetitif sebagai pemimpin di masa depan.</p>
+<p>4. Mengembangkan sarana prasarana yang representatif berbasis Teknologi informasi dalam lingkungan belajar yang kondusif dan berwawasan  lingkungan.</p>
 
-<p>5.Menyiapkan Lulusan yang peduli terhadap sesama manusia dan lingkungannya</p>
+<p>5. Mengembangkan kompetensi pendidik dan tenaga kependidikan.</p>
 
   </div>
 </div>

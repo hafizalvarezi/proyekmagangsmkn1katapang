@@ -26,8 +26,8 @@ class siswacontroller extends Controller
         $dtsiswa = siswa::all();
         return view('layout.about');
     }
-    public function mur(){
-        $dtsiswa = siswa::all();
+    public function mur(){  
+         $dtsiswa = siswa::Paginate(23);
         return view('layout.mur', compact('dtsiswa'));
     }
     public function eg(){
@@ -49,9 +49,7 @@ class siswacontroller extends Controller
         //dd($request->all());
         siswa::create([
         'nis'=>$request->nis,
-        'image'=>$request->image,
         'nama'=>$request->nama,
-        'askol'=>$request->askol,
         'jkel'=>$request->jkel,
         'jrs'=>$request->jrs,
         'ttg'=>$request->ttg,
@@ -87,7 +85,6 @@ class siswacontroller extends Controller
         $data=siswa::find($req->id);
         $data->nis=$req->nis;
         $data->nama=$req->nama;
-        $data->askol=$req->askol;
         $data->jrs=$req->jrs;
         $data->ttg=$req->ttg;
         $data->bulan=$req->bulan;
@@ -128,7 +125,7 @@ class siswacontroller extends Controller
          return back()->with('loginError','Login Failed!');
      }
      public function list(){
-        $dtsiswa = siswa::all();
+        $dtsiswa = siswa::Paginate(1);
         return view('list',compact('dtsiswa'));
      }
      public function logout(Request $request){

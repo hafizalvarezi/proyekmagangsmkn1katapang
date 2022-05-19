@@ -13,7 +13,7 @@
 </head>
 <body>
   <!-- navbar -->
-<img class="title-satu" src="background/title.png" alt="">
+<img class="title-satu" src="background/title.png" alt="" height="100px">
 <nav>
 <a style="text-decoration:none" href="https://thohirdev.com"></a>
         <input type="checkbox" id="check">
@@ -122,11 +122,9 @@
 
 <!-- pagination -->
 <br><ul class="pagination">
-    <li class="page-item"><a class="page-link" href="#"><</a></li>
     <li class="page-item" ><a class="page-link" href="/galeri">1</a></li>
-    <li class="page-item"><a class="page-link" href="/galeri1">2</a></li>
+    <li class="page-item active"><a class="page-link" href="/galeri1">2</a></li>
     <li class="page-item"><a class="page-link" href="/galeri2">3</a></li>
-    <li class="page-item"><a class="page-link" href="#">></a></li>
   </ul>
 
 <!-- footer -->
