@@ -3,7 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\Keuangan;
+use App\Models\murid;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 
 class KeuanganController extends Controller
 {
@@ -12,10 +15,6 @@ class KeuanganController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
-        
-    }
     public function set(){
         $data = Keuangan::simplePaginate(10);
         return view('set',compact('data'));
@@ -23,15 +22,60 @@ class KeuanganController extends Controller
     public function uang(){
         return view('kas.uang');
     }
-    public function simpankas(Request $request){
-        //dd($request->all());
-        keuangan::create([
-            'id_siswa'=>$request->id_siswa,
-            'harga'=>$request->harga,
-            'keterangan'=>$request->keterangan,
-            ]);
-        return redirect('/set');
+    public function loginmur(){
+        return view('layout.loginmur');
     }
+    public function regismur(){
+        return view('layout.regismur');
+    }
+    // \/ Register System//
+    public function daftarsiswa(Request $request)
+    {
+        //dd($request->all());
+        murid::create([
+        'nama'=>$request->nama,
+        'email'=>$request->email,
+        'pass'=>$request->pass,
+        ]);
+        return redirect('/loginmur');
+    }
+
+    public function simpanmur(Request $request){
+
+        $validatedData = $request->validate([
+            'nama' => ['required','min:4','max:255','unique:users'],
+            'email' => 'required',
+            'pass' => 'required|min:5|unique:users',
+        ]);
+        $validatedData['pass'] = Hash::make($validatedData['pass']);
+        
+        murid::create($validatedData);
+ 
+        return redirect('/loginmur');
+    }
+    // /\ Register System//
+       //     +      //
+    // \/ Login System //
+    public function authenticate(Request $request)
+    {
+        $credentials = $request->validate([
+            'nama' => 'required',
+            'email' => 'required',
+            'pass' => 'required'
+        ]);
+        
+        return redirect('/dashboard');
+    }
+    // /\ Login System //
+        public function simpankas(Request $request){
+            //dd($request->all());
+            keuangan::create([
+                'id_siswa'=>$request->id_siswa,
+                'harga'=>$request->harga,
+                'keterangan'=>$request->keterangan,
+                ]);
+            return redirect('/set');
+          }
 
     /**
      * Show the form for creating a new resource.

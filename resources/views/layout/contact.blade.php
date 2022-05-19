@@ -20,11 +20,14 @@
             <i class="fas fa-clock fa-xs"></i>
         </label>
         <ul>
+        @foreach ($dtsiswa as $data)
             <li><a style="text-decoration:none" href="/dashboard">Home</a></li>
-            <li><a style="text-decoration:none" href="/about" >About</a></li>
-            <li><a style="text-decoration:none" class="active">Contact</a></li>
+            <li><a style="text-decoration:none" href="/about">About</a></li>
+            <li><a style="text-decoration:none" class="active" href="/contact">Contact</a></li>
             <li><a style="text-decoration:none" href="/galeri">Galeri</a></li>
             <li><a style="text-decoration:none" href="/mur">Daftar Siswa</a></li>
+            <li><a style="text-decoration:none;" href="{{"profile/".$data['nama']}}">Profile</a></li>
+        @endforeach
         </ul>
     </nav>
   <div class="card-body">

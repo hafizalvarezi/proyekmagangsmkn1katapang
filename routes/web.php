@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\akuncontroller;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\pesancontroller;
 use App\Http\Controllers\siswacontroller;
@@ -48,8 +49,6 @@ Route::get('edit/{id}', [siswacontroller::class, 'showData']);
 Route::get('/list', [siswacontroller::class, 'list']);
 Route::get('/admin', [siswacontroller::class, 'index']);
 Route::get('/eg', [siswacontroller::class, 'eg']);
-Route::get('galeri1', [siswacontroller::class, 'galeri1']);
-Route::get('galeri2', [siswacontroller::class, 'galeri2']);
 Route::get('/pagination-with-query-string', [HomeController::class, 'pagination']);
 
 //---POST---//
@@ -59,8 +58,21 @@ Route::post('/sign', [siswacontroller::class, 'store']);
 Route::post('/loginad', [siswacontroller::class, 'authenticate']);
 Route::post('/logout', [siswacontroller::class, 'logout']);
 Route::post('/simpanpesan', [pesancontroller::class, 'simpanpesan'])->name('simpanpesan');
+Route::post('/regismur', [KeuanganController::class, 'daftarsiswa']);
+Route::post('/loginmur', [KeuanganController::class, 'authenticate']);
 
 // KEUANGAN //
 Route::post('/simpankas', [KeuanganController::class, 'simpankas'])->name('simpankas');
 Route::get('/uang', [KeuanganController::class, 'uang'])->name('uang');
 Route::get('/set', [KeuanganController::class, 'set'])->name('set');
+Route::get('/loginmur', [KeuanganController::class, 'loginmur'])->name('loginmur');
+Route::get('/regismur', [KeuanganController::class, 'regismur'])->name('regismur');
+
+//Dashboard//
+Route::get('/dashboard', [akuncontroller::class, 'dashboard'])->name('dashboard');
+Route::get('/about', [akuncontroller::class, 'about1'])->name('about');
+Route::get('/contact', [akuncontroller::class, 'contact1'])->name('contact');
+Route::get('/galeri', [akuncontroller::class, 'galeridata'])->name('galeri');
+Route::get('galeri1', [akuncontroller::class, 'galeri1']);
+Route::get('galeri2', [akuncontroller::class, 'galeri2']);
+Route::get('/profile/{id}', [akuncontroller::class, 'profiledata2']);

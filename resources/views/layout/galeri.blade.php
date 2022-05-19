@@ -21,11 +21,14 @@
         </label>
         
         <ul>
+        @foreach ($dtsiswa as $data)
             <li><a style="text-decoration:none" href="/dashboard">Home</a></li>
             <li><a style="text-decoration:none" href="/about">About</a></li>
             <li><a style="text-decoration:none" href="/contact">Contact</a></li>
-            <li><a style="text-decoration:none" href="/galeri" class="active">Galeri</a></li>
+            <li><a style="text-decoration:none" class="active" href="/galeri">Galeri</a></li>
             <li><a style="text-decoration:none" href="/mur">Daftar Siswa</a></li>
+            <li><a style="text-decoration:none;" href="{{"profile/".$data['nama']}}">Profile</a></li>
+        @endforeach
         </ul>
     </nav>
         </div>
