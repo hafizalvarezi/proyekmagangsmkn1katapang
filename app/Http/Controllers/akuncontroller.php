@@ -33,10 +33,5 @@ class akuncontroller extends Controller
         $dtsiswa = murid::all();
         return view('layout.galeri2',compact('dtsiswa'));
     }
-    public function profiledata2($id)
-    {
-        $data= murid::find($id);
-        return view('layout.profile', compact('data'));
-    }
 // Murid //
 }

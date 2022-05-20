@@ -68,6 +68,8 @@ Route::get('/set', [KeuanganController::class, 'set'])->name('set');
 Route::get('/loginmur', [KeuanganController::class, 'loginmur'])->name('loginmur');
 Route::get('/regismur', [KeuanganController::class, 'regismur'])->name('regismur');
 
+Route::get('kas', [KeuanganController::class, 'kas'])->name('kas');
+
 //Dashboard//
 Route::get('/dashboard', [akuncontroller::class, 'dashboard'])->name('dashboard');
 Route::get('/about', [akuncontroller::class, 'about1'])->name('about');
@@ -75,4 +77,3 @@ Route::get('/contact', [akuncontroller::class, 'contact1'])->name('contact');
 Route::get('/galeri', [akuncontroller::class, 'galeridata'])->name('galeri');
 Route::get('galeri1', [akuncontroller::class, 'galeri1']);
 Route::get('galeri2', [akuncontroller::class, 'galeri2']);
-Route::get('/profile/{id}', [akuncontroller::class, 'profiledata2']);

@@ -4,6 +4,8 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
+use function PHPUnit\Framework\stringContains;
+
 return new class extends Migration
 {
     /**
@@ -13,10 +15,11 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('keuangan', function (Blueprint $table) {
+        Schema::create('muridkas', function (Blueprint $table) {
             $table->id();
-            $table->string('harga');
-            $table->string('keterangan');
+            $table->integer('nis');
+            $table->string('nama');
+            $table->integer('keuangan_id');
             $table->timestamps();
         });
     }
@@ -28,6 +31,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('keuangan');
+        Schema::dropIfExists('muridkas');
     }
 };

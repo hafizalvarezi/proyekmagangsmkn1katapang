@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Keuangan;
 use App\Models\murid;
+use App\Models\muridkas;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
@@ -19,8 +20,13 @@ class KeuanganController extends Controller
         $data = Keuangan::simplePaginate(10);
         return view('set',compact('data'));
     }
+    public function kas(){
+        $data = Keuangan::simplePaginate(10);
+        return view('layout.kas',compact('data'));
+    }
     public function uang(){
-        return view('kas.uang');
+        $nis = muridkas::simplePaginate(10);
+        return view('kas.uang',compact('nis'));
     }
     public function loginmur(){
         return view('layout.loginmur');
@@ -69,12 +75,12 @@ class KeuanganController extends Controller
     // /\ Login System //
         public function simpankas(Request $request){
             //dd($request->all());
-            keuangan::create([
-                'id_siswa'=>$request->id_siswa,
+            muridkas::create([
+                'nis'=>$request->nis,
                 'harga'=>$request->harga,
                 'keterangan'=>$request->keterangan,
                 ]);
-            return redirect('/set');
+            return redirect('/kas');
           }
 
     /**

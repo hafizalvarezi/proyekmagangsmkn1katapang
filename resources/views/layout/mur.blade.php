@@ -22,7 +22,7 @@
             <li><a style="text-decoration:none" href="/contact">Contact</a></li>
             <li><a style="text-decoration:none" href="/galeri">Galeri</a></li>
             <li><a style="text-decoration:none" class="active" href="/mur">Daftar Siswa</a></li>
-            <li><a style="text-decoration:none;" href="#">Profile</a></li>
+            <li><a style="text-decoration:none;" class="pro" href="/kas">Uang Kas</a></li>
         </ul>
     </nav>
     <div class="table">

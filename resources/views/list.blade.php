@@ -26,12 +26,6 @@
                         <span class="btn2">&nbsp; List Data Siswa</span>
                     </a>
                 </li>
-                <li>
-                    <a href="/set">
-                        <span class="icon"><i class="fa-solid fa-sliders"></i></span>
-                        <span class="btn3">&nbsp; Keuangan</span>
-                    </a>
-                </li>
             </ul>
             <div class="log">
                 <form action="/logout" method="post">

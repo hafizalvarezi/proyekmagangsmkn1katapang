@@ -184,3 +184,11 @@ footer {
 .table-dark{
     width: 2%;
 }
+.pro{
+    background: green;
+    border-radius: 20px;
+}
+.pro:hover{
+    background: #B92B27;
+    transition: 5s;
+}

@@ -67,7 +67,7 @@
                 </table>
                 <div class="page">
 {{ $data->links() }}
-</div>
+                </div>
             </div>
         </div>
     </div>

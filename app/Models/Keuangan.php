@@ -7,7 +7,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class Keuangan extends Model
 {
-    protected $table = 'keuangan';
-    protected $guarded = [];
-    public $timestamps=false;
+    protected $table = "keuangan";
+    protected $primaryKey = "id";
+    protected $fillable = [
+        'id','nis','nama','harga','keterangan'];
+
+    public function muridkas()
+    {
+        return $this->hasOne(muridkas::class);
+    }
 }

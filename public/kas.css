@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: cadetblue;
+    font-family: 'Oswald', sans-serif;
+    overflow: hidden;
+}
+.title{
+    position: absolute;
+    right: 37%;
+}
+.adm1{
+    background: #5463FF;
+    color: white;
+    border: 1px solid white;
+    border-collapse: collapse;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    empty-cells: show;
+    width: 1030px;
+    table-layout: fixed; 
+}
+
+.adm1 tr,td {
+    font-family: 'Bebas Neue', cursive;
+}
+.tab th{
+    font-family: 'Bebas Neue', cursive;
+    color: black;
+    letter-spacing: 2px;
+}
+.tab{
+    background: #96fcb8;
+}
+.button{
+    margin: auto;
+    padding: auto;
+}
+.tom{
+    background: #4CAF50;
+    border: none;
+    border-style: solid;
+    border-radius: 20px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    border-color: black;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Koulen', cursive;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+.tom:hover{
+    background: #0c7a0f;
+}
+.back{
+    background: #bb082f;
+    border: none;
+    border-style: solid;
+    border-radius: 20px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    border-color: black;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Koulen', cursive;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}
+.back:hover{
+    background: #e7758e;
+}

@@ -21,9 +21,9 @@
                     <input type="text" placeholder="Nama" name="nama" value="{{$data['nama']}}"> <br> <br>
                     <label for=""><b>ASAL SEKOLAH</b></label> <br>
                     <input type="text" placeholder="Asal Sekolah" name="askol" value="{{$data['askol']}}"> <br> <br>
-                    <label for="jrs"><b>Jurusan</b></label><br>
+                    <label for="jrs"><b>JURUSAN</b></label><br>
                     <select name="jrs" id="jrs" class="categ">
-                    <option value="">{{$data['jrs']}}</option>
+                    <option value="{{$data['jrs']}}">{{$data['jrs']}}</option>
                     <option value="Tidak Punya">Tidak Punya</option>
                     <option value="Rekayasa Perangkat Lunak">Rekayasa Perangkat Lunak</option>
                     <option value="MultiMedia">MultiMedia</option>
@@ -31,7 +31,7 @@
                     </select>
                     <br><br>
                     <label for="ttg"><b>Tanggal Lahir</b></label><br>
-    <td>
+                    <td>
 					<select name="ttg" required>
 							<option value="">Tanggal</option>
 						<?php for( $i = 1; $i <= 31; $i++ ) : ?>

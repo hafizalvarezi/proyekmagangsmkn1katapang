@@ -1,50 +1,9 @@
 body {
     margin: 0;
     padding: 0;
-    background: url(/background/ks.jpeg);
+    background: red;
 }
-.nav {
-    background: #1b9bff;
-    color: #fff;
-    list-style: none;
-    padding: 5px 10px;
-    letter-spacing: 3px;
-}
-.tbh{
-    text-align: right;
-    height: 20px;
-    color: #fff;
-}
-.btn{
+.g:active{
     position: absolute;
-    font-family: sans-serif;
-    right: 20px;
-    top: 19px;
-    border-radius: 20px;
-    padding: 15px;
-    margin: 4px;
-}
-.table{
-    height: 15px;
-    position: absolute;
-    top: 150px;
-    left: 350px;
-}
-.tbl{
-    background: #1b9bff;
-    color: white;
-    height: 40px;
-}
-.tbl a{
-    color: #fff;
-    text-decoration: none;
-}
-.off{
-    position: absolute;
-    bottom: 1px;
-    left: 10px;
-    color: #ffffff;
-}
-.off a{
-    color: black;
+    right: 10px;
 }
