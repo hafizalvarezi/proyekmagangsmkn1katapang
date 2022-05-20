@@ -7,16 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class siswa extends Model
 {
-    protected $table = 'murid';
-    // protected $fillable = [
-    //     'nis',
-    //     'nama',
-    //     'jkel',
-    //     'jrs',
-    //     'ttg',
-    //     'bulan',
-    //     'tahun',
-    // ];
-    protected $guarded = [];
+    protected $table = 'Siswa';
+    protected $fillable = ['id','nis','nama','jkel','jrs','ttg','bulan','tahun','keuangan_id'];
     public $timestamps=false;
+
+    public function keuangan(){
+        return $this->belongsTo(Keuangan::class);
+    }
+
 }

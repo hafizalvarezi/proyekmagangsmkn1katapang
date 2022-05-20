@@ -8,6 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Keuangan extends Model
 {
     protected $table = 'keuangan';
-    protected $guarded = [];
-    public $timestamps=false;
+    protected $fillable = ['id','harga','keterangan'];
+
+    public function siswa(){
+        return $this->hasOne(Siswa::class);
+    }
 }

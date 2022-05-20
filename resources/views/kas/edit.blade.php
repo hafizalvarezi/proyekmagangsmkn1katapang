@@ -29,7 +29,7 @@
                     </select>
                     <br><br>
                     <label for="ttg"><b>Tanggal Lahir</b></label><br>
-    <td>
+                    <td>
 					<select name="ttg" required>
 							<option value="">Tanggal</option>
 						<?php for( $i = 1; $i <= 31; $i++ ) : ?>

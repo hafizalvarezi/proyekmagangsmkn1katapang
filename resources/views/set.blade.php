@@ -54,14 +54,18 @@
             <table class="adm1" border="1px" align="center" width="700">
                 <tr align="center">
                     <th>NIS</th>
+                    <th>NAMA</th>
                     <th>HARGA</th>
                     <th>KETERANGAN</th>
+                    <th>ADMIN</th>
                 </tr>
                 @foreach ($data as $item)
                 <tr align="center">
-                    <td>{{$item->id_siswa}}</td>
+                    <td>{{$item->siswa->nis}}</td>
+                    <td>{{$item->siswa->nama}}</td>
                     <td>{{$item->harga}}</td>
                     <td class="em">{{$item->keterangan}}</td>
+                    <td><a class="btne" href={{"edit/".$item['id']}}>Edit |</a> <a class="btne" href={{"delete/".$item['id']}}>Hapus</a></td>
                 </tr>
                 @endforeach
                 </table>

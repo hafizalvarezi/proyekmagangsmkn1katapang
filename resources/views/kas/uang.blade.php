@@ -16,8 +16,16 @@
   </div>
 
   <div class="container">
-    <label for="id_siswa"><b>Nis</b></label><br>
-    <input type="number" placeholder="Masukan NIS MAX=10" name="id_siswa" pattern="1234567890" onKeyPress="if(this.value.length==10) return false;" required><br><br>
+    <label for="nis_id"><b>Pilih NIS =></b>
+                <select name="nis_id" id="nis_id">
+                    <option disabled value>NIS</option>
+                  @foreach ($nis as $item)
+                    <option value="{{$item->id}}">{{$item->nis}}</option>
+                  @endforeach
+                </select>
+    </label>
+                
+                <br><br>
 
     <label for="harga"><b>Harga</b></label><br>
     <input type="text" placeholder="Rp.XXXXXX" name="harga" required><br><br>

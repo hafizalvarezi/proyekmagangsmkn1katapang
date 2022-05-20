@@ -49,6 +49,7 @@
         <table class="tbl" border="1px" align="center" width="1116">
                 <tr align="center">
                     <td>ID</td>
+                    <td>NO</td>
                     <td>NIS</td>
                     <td>Nama</td>
                     <td>Jenis Kelamin</td>
@@ -59,6 +60,7 @@
                 @foreach ($dtsiswa as $item)
                 <tr align="center">
                     <td>{{$item['id']}}</td>
+                    <td>{{$item['keuangan_id']}}</td>
                     <td>{{$item->nis}}</td>
                     <td>{{$item->nama}}</td>
                     <td>{{$item->jkel}}</td>

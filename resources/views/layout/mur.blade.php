@@ -22,13 +22,14 @@
             <li><a style="text-decoration:none" href="/contact">Contact</a></li>
             <li><a style="text-decoration:none" href="/galeri">Galeri</a></li>
             <li><a style="text-decoration:none" class="active" href="/mur">Daftar Siswa</a></li>
+            <li><a style="text-decoration:none;" href="#">Profile</a></li>
         </ul>
     </nav>
     <div class="table">
-        <table class="tbl" border="1px" align="center" width="1400">
+        <table class="tbl" border="1px" align="center" width="1390">
         <thead class="table-dark">
                 <tr align="center">
-                    <td>ID</td>
+                    <td>No</td>
                     <td>NIS</td>
                     <td>Nama</td>
                     <td>Jenis Kelamin</td>
@@ -38,7 +39,7 @@
               </thead>
                 @foreach ($dtsiswa as $item)
                 <tr align="center">
-                    <td>{{$item['id']}}</td>
+                    <td>{{$item['keuangan_id']}}</td>
                     <td>{{$item->nis}}</td>
                     <td>{{$item->nama}}</td>
                     <td>{{$item->jkel}}</td>

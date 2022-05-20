@@ -59,8 +59,17 @@ Route::post('/sign', [siswacontroller::class, 'store']);
 Route::post('/loginad', [siswacontroller::class, 'authenticate']);
 Route::post('/logout', [siswacontroller::class, 'logout']);
 Route::post('/simpanpesan', [pesancontroller::class, 'simpanpesan'])->name('simpanpesan');
+Route::post('/regismur', [KeuanganController::class, 'daftarsiswa']);
+Route::post('/loginmur', [KeuanganController::class, 'authenticate']);
 
 // KEUANGAN //
 Route::post('/simpankas', [KeuanganController::class, 'simpankas'])->name('simpankas');
 Route::get('/uang', [KeuanganController::class, 'uang'])->name('uang');
 Route::get('/set', [KeuanganController::class, 'set'])->name('set');
+Route::get('/dashboard', [KeuanganController::class, 'dashboard'])->name('dashboard');
+Route::get('/about', [KeuanganController::class, 'about1'])->name('about');
+Route::get('/contact', [KeuanganController::class, 'contact1'])->name('contact');
+Route::get('/galeri', [KeuanganController::class, 'galeridata'])->name('galeri');
+Route::get('profile/{id}', [KeuanganController::class, 'profiledata2']);
+Route::get('/loginmur', [KeuanganController::class, 'loginmur'])->name('loginmur');
+Route::get('/regismur', [KeuanganController::class, 'regismur'])->name('regismur');

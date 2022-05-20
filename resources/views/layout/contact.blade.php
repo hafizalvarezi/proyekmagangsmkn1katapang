@@ -21,10 +21,11 @@
         </label>
         <ul>
             <li><a style="text-decoration:none" href="/dashboard">Home</a></li>
-            <li><a style="text-decoration:none" href="/about" >About</a></li>
-            <li><a style="text-decoration:none" class="active">Contact</a></li>
+            <li><a style="text-decoration:none" href="/about">About</a></li>
+            <li><a style="text-decoration:none" class="active" href="/contact">Contact</a></li>
             <li><a style="text-decoration:none" href="/galeri">Galeri</a></li>
             <li><a style="text-decoration:none" href="/mur">Daftar Siswa</a></li>
+            <li><a style="text-decoration:none;" href="#">Profile</a></li>
         </ul>
     </nav>
   <div class="card-body">

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\siswa;
 use App\Models\pesan;
 use App\Models\User;
+use App\Models\murid;
 use GuzzleHttp\Promise\Create;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Http\Request;
@@ -43,12 +44,36 @@ class siswacontroller extends Controller
     public function galeri(){
         return view('layout.galeri');
     }
+    
+// Murid //
+public function about1(){
+    $dtsiswa = murid::all();
+    return view('layout.about',compact('dtsiswa'));
+}
+public function contact1(){
+    $dtsiswa = murid::all();
+    return view('layout.contact',compact('dtsiswa'));
+}
+public function galeridata(){
+    $dtsiswa = murid::all();
+    return view('layout.galeri',compact('dtsiswa'));
+}
+public function galeri1(){
+    $dtsiswa = murid::all();
+    return view('layout.galeri1',compact('dtsiswa'));
+}
+public function galeri2(){
+    $dtsiswa = murid::all();
+    return view('layout.galeri2',compact('dtsiswa'));
+}
+// Murid //
 
     public function simpandaftar(Request $request)
     {
         //dd($request->all());
         siswa::create([
         'nis'=>$request->nis,
+        'keuangan_id'=>$request->keuangan_id,
         'nama'=>$request->nama,
         'jkel'=>$request->jkel,
         'jrs'=>$request->jrs,
@@ -65,15 +90,15 @@ class siswacontroller extends Controller
         return redirect('list');
     }
 
-    function galeri1()
-    {
-        return view('layout.galeri1');
-    }
+    // function galeri1()
+    // {
+    //     return view('layout.galeri1');
+    // }
 
-    function galeri2()
-    {
-        return view('layout.galeri2');
-    }
+    // function galeri2()
+    // {
+    //     return view('layout.galeri2');
+    // }
 
     function showData($id)
     {
@@ -125,7 +150,7 @@ class siswacontroller extends Controller
          return back()->with('loginError','Login Failed!');
      }
      public function list(){
-        $dtsiswa = siswa::Paginate(1);
+        $dtsiswa = siswa::Paginate(5);
         return view('list',compact('dtsiswa'));
      }
      public function logout(Request $request){
