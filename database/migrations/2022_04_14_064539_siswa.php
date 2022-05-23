@@ -15,13 +15,15 @@ return new class extends Migration
     {
         Schema::create('murid', function (Blueprint $table){
             $table->id('id');
-            $table->integer('nis')->unique();
+            $table->integer('nis');
             $table->string('nama');
             $table->string('jkel');
             $table->string('jrs');
             $table->string('ttg');
             $table->string('bulan');
             $table->string('tahun');
+            $table->integer('keuangan_id');
+            $table->timestamps();
         });
     }
 

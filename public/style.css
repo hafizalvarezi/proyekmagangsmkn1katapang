@@ -1,9 +1,18 @@
 body {
     margin: 0;
     padding: 0;
+    overflow: hidden;
     background: red;
 }
 .g:active{
     position: absolute;
     right: 10px;
+}
+.video{
+    position: absolute;
+    right: 476px;
+    top: 182px;
+}
+.audio{
+    display: none;
 }

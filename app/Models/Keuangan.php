@@ -10,10 +10,10 @@ class Keuangan extends Model
     protected $table = "keuangan";
     protected $primaryKey = "id";
     protected $fillable = [
-        'id','nis','nama','harga','keterangan'];
+        'id','harga','keterangan'];
 
-    public function muridkas()
+    public function siswa()
     {
-        return $this->hasOne(muridkas::class);
+        return $this->hasOne(siswa::class);
     }
 }

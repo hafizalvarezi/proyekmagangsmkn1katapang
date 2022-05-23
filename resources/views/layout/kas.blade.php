@@ -11,12 +11,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="kas.css">
-    <title>Daftar Keuangan</title>
+    <title>Info Pembayaran</title>
 </head>
 <body>
     <div class="container">
         <div class="title">
-            <h1 class="tit">HALAMAN DAFTAR KEUANGAN</h1>
+            <h1 class="tit">HALAMAN DAFTAR KEUANGAN 2022</h1>
+            <h2 class="tit2">*DATA AKAN DIRISET SETAHUN SEKALI*</h2>
         </div>
         <div class="bayar">
             <a href="{{route('uang')}}"><button type = "button" class="tom">Bayar</button></a>
@@ -31,8 +32,8 @@
                 </tr>
                 @foreach ($data as $item)
                 <tr align="center">
-                    <td>{{$item->muridkas['nis']}}</td>
-                    <td>{{$item->muridkas['nama']}}</td>
+                    <td>{{$item->siswa['nis']}}</td>
+                    <td>{{$item->siswa['nama']}}</td>
                     <td>{{$item->harga}}</td>
                     <td class="em">{{$item->keterangan}}</td>
                 </tr>

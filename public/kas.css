@@ -9,7 +9,7 @@ body{
 }
 .title{
     position: absolute;
-    right: 37%;
+    right: 34%;
 }
 .adm1{
     background: #5463FF;
@@ -77,4 +77,7 @@ body{
 }
 .back:hover{
     background: #e7758e;
+}
+.tit2{
+    text-align: center;
 }

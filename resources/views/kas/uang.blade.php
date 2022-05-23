@@ -42,6 +42,16 @@
       <option value="Rp 40.000">Rp 40.000</option>
       <option value="Rp 45.000">Rp 45.000</option>
       <option value="Rp 50.000">Rp 50.000</option>
+      <option value="Rp 55.000">Rp 55.000</option>
+      <option value="Rp 60.000">Rp 60.000</option>
+      <option value="Rp 65.000">Rp 65.000</option>
+      <option value="Rp 70.000">Rp 70.000</option>
+      <option value="Rp 75.000">Rp 75.000</option>
+      <option value="Rp 80.000">Rp 80.000</option>
+      <option value="Rp 85.000">Rp 85.000</option>
+      <option value="Rp 90.000">Rp 90.000</option>
+      <option value="Rp 950.000">Rp 95.000</option>
+      <option value="Rp 100.000">Rp 100.000</option>
     </select><br><br>
     <label for="keterangan"><b>Keterangan :</b></label><br>
     <input type="text" placehorder="Masukan Keterangan Disini" name="keterangan" required><br>

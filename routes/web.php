@@ -20,6 +20,12 @@ use App\Http\Controllers\KeuanganController;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('eg2', function () {
+    return view('eg2');
+});
+Route::get('eg3', function () {
+    return view('eg3');
+});
 route::get('/siswa', function(){
     return view('siswa');
 });
@@ -64,11 +70,10 @@ Route::post('/loginmur', [KeuanganController::class, 'authenticate']);
 // KEUANGAN //
 Route::post('/simpankas', [KeuanganController::class, 'simpankas'])->name('simpankas');
 Route::get('/uang', [KeuanganController::class, 'uang'])->name('uang');
-Route::get('/set', [KeuanganController::class, 'set'])->name('set');
 Route::get('/loginmur', [KeuanganController::class, 'loginmur'])->name('loginmur');
 Route::get('/regismur', [KeuanganController::class, 'regismur'])->name('regismur');
-
 Route::get('kas', [KeuanganController::class, 'kas'])->name('kas');
+Route::get('editkas',[KeuanganController::class, 'editkas'])->name('editkas');
 
 //Dashboard//
 Route::get('/dashboard', [akuncontroller::class, 'dashboard'])->name('dashboard');

@@ -19,6 +19,11 @@ return new class extends Migration
             $table->id();
             $table->integer('nis');
             $table->string('nama');
+            $table->string('jkel');
+            $table->string('jrs');
+            $table->string('ttg');
+            $table->string('bulan');
+            $table->string('tahun');
             $table->integer('keuangan_id');
             $table->timestamps();
         });

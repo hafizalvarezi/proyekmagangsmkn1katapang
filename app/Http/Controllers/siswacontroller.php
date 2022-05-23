@@ -49,6 +49,7 @@ class siswacontroller extends Controller
         //dd($request->all());
         siswa::create([
         'nis'=>$request->nis,
+        'keuangan_id'=>$request->keuangan_id,
         'nama'=>$request->nama,
         'jkel'=>$request->jkel,
         'jrs'=>$request->jrs,
@@ -125,7 +126,7 @@ class siswacontroller extends Controller
          return back()->with('loginError','Login Failed!');
      }
      public function list(){
-        $dtsiswa = siswa::Paginate(1);
+        $dtsiswa = siswa::all();
         return view('list',compact('dtsiswa'));
      }
      public function logout(Request $request){

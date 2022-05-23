@@ -9,7 +9,7 @@ class muridkas extends Model
 {
     protected $table = "muridkas";
     protected $primaryKey = "id";
-    protected $fillable = ['id','nis','nama','keuangan_id'];
+    protected $fillable = ['id','nis','nama','jkel','jrs','ttg','bulan','tahun','keuangan_id'];
 
     public function keuangan()
     {

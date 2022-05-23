@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Keuangan;
 use App\Models\murid;
+use App\Models\siswa;
 use App\Models\muridkas;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
@@ -16,16 +17,16 @@ class KeuanganController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function set(){
-        $data = Keuangan::simplePaginate(10);
-        return view('set',compact('data'));
-    }
     public function kas(){
         $data = Keuangan::simplePaginate(10);
         return view('layout.kas',compact('data'));
     }
+    public function editkas(){
+        $data = Keuangan::simplePaginate(10);
+        return view('editkas',compact('data'));
+    }
     public function uang(){
-        $nis = muridkas::simplePaginate(10);
+        $nis = siswa::simplePaginate(10);
         return view('kas.uang',compact('nis'));
     }
     public function loginmur(){
@@ -60,7 +61,9 @@ class KeuanganController extends Controller
         return redirect('/loginmur');
     }
     // /\ Register System//
+
        //     +      //
+
     // \/ Login System //
     public function authenticate(Request $request)
     {
@@ -73,15 +76,19 @@ class KeuanganController extends Controller
         return redirect('/dashboard');
     }
     // /\ Login System //
+
+
         public function simpankas(Request $request){
             //dd($request->all());
-            muridkas::create([
-                'nis'=>$request->nis,
+            Keuangan::create([
+                'nis_id'=>$request->nis_id,
                 'harga'=>$request->harga,
                 'keterangan'=>$request->keterangan,
                 ]);
             return redirect('/kas');
           }
+
+
 
     /**
      * Show the form for creating a new resource.
