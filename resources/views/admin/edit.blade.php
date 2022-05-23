@@ -49,7 +49,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <td>Menu :  <input type="text" name="Menu" value="{{$menu->Menu}}"></td>
             </tr>
             <tr>
-                <td>Harga :<input type="number" name="Harga" value="{{$menu->Harga}}"></td>
+                <td>Harga :<input type="text" name="Harga" value="{{$menu->Harga}}"></td>
             </tr>
             <td><button type="submit">Simpan</button></td>
   </form>

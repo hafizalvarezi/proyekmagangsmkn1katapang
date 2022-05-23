@@ -4,6 +4,7 @@ use App\Http\Controllers\sitecontroller;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\BerandaController;
+use App\Http\Controllers\GambarController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -45,3 +46,7 @@ Route::get('deletedata/{id}',[AdminController::class,'delete'])->name('deletedat
 Route::group(['middleware' => ['auth']], function(){
     Route::get('home',[sitecontroller::class,'home'])->name('home');
 });
+
+Route::get('data_gambar',[GambarController::class,'index'])->name('data_gambar');
+Route::get('create_gambar',[GambarController::class,'create'])->name('create_gambar');
+Route::get('simpangambar',[GambarController::class,'store'])->name('simpangambar');

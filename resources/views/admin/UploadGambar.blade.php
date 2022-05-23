@@ -7,6 +7,18 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <html lang="en">
 <head>
     @include('layout_admin.head')
+    <style>
+  .pagination {
+    position: fixed;
+    top: 80%;
+    left: 20%;
+}
+.tambah {
+    position: fixed;
+    top: 20%;
+    left: 90%;
+}
+    </style>
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
@@ -23,12 +35,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Data Menu</h1>
+            <h1 class="m-0">Data Gambar</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Data Menu</li>
+              <li class="breadcrumb-item active">Data Gambar</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -40,22 +52,34 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <div class="content">
       <div class="container-fluid">
         <div class="row">
-        <center>
-    <h2>Tambah Data Coffee</h2>
-  <form action="{{route('simpandata')}}" method ="post"> 
-    {{csrf_field() }}
-        <table>
-            <tr>
-                <td>Menu :  <input type="text" name="Menu" placeholder="Masukan Menu"></td>
-            </tr>
-            <tr>
-                <td>Harga :<input type="text" name="Harga" placeholder="Masukan Harga"></td>
-            </tr>
-            <td><button type="submit">Simpan</button></td>
-  </form>
-  </center>
+  <table border="1" cellpadding= "5" cellspacing= "0">
+    <tr>     
+      <td>Id</td>
+      <td>Nama Gambar</td>
+      <td>Gambar</td>
+      <td>Edit</td>
+    </tr>
+@foreach($dtGambar as $item)
+    <tr>
+      <td>{{$loop->iteration}}</td>
+      <td>{{$item->nama}}</td>
+      <td>{{$item->gambar}}</td>
+    <td>
+        <a href="#">Edit</a>|<a href="#">Delete</a>
+    </td>
+</tr>
+@endforeach
+
+</table>
+<div class="tambah">
+<tr><a href="{{route('create_gambar')}}">Tambah Data</a></tr>
+</div>
+<div class="pagination">
+ 
+      </div>
         </div>
       </div>
+ 
   <!-- /.content-wrapper -->
 
   <!-- Control Sidebar -->

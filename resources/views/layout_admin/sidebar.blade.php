@@ -39,8 +39,12 @@
             <ul class="nav nav-treeview">
               <li class="nav-item">
                 <a href="{{route('dtmenu')}}" class="nav-link active">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Data Menu</p>
+                  Data Menu
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{route('data_gambar')}}" class="nav-link active">
+                  Data Gambar
                 </a>
               </li>
         </ul>

@@ -23,12 +23,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Data Menu</h1>
+            <h1 class="m-0">Upload Gambar</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Data Menu</li>
+              <li class="breadcrumb-item active"></li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -41,15 +41,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <div class="container-fluid">
         <div class="row">
         <center>
-    <h2>Tambah Data Coffee</h2>
-  <form action="{{route('simpandata')}}" method ="post"> 
+  <form action="{{route('simpangambar')}}" method ="post" enctype="multipart/form-data"> 
     {{csrf_field() }}
         <table>
             <tr>
-                <td>Menu :  <input type="text" name="Menu" placeholder="Masukan Menu"></td>
+                <td>Title :  <input type="text" name="nama" placeholder="Masukan Nama"></td>
             </tr>
             <tr>
-                <td>Harga :<input type="text" name="Harga" placeholder="Masukan Harga"></td>
+                <td>Gambar :<input type="file" name="gambar" placeholder="Masukan Gambar"></td>
             </tr>
             <td><button type="submit">Simpan</button></td>
   </form>
