@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Auth;
 
 class LoginController extends Controller
 {
-public function login(){
+public function halamanlogin(){
     return view('login');  
 }
 
@@ -20,7 +20,7 @@ public function actionlogin(Request $request)
         'email' => $request->input('email'),
         'password' => $request->input('password'),
     ];
-
+ 
     if (Auth::Attempt($data)) {
         return redirect('home');
     }else{
@@ -28,6 +28,10 @@ public function actionlogin(Request $request)
     }
 }
 
+public function logout(Request $request){
+    Auth::logout();
+    return redirect('login');
+}
 
 public function registrasi(){
     return view('registrasi');

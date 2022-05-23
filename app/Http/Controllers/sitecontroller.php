@@ -21,7 +21,19 @@ class sitecontroller extends Controller
     public function contact(){
         return view('contact');
     }
-    public function shop(){
-        return view('shop');
+    public function shop1(){
+        return view('Shop.shop1');
+    }
+
+    public function shop2(){
+        return view('Shop.shop2');
+    }
+
+    public function shop3(){
+        return view('Shop.shop3');
+    }
+    
+    public function shop4(){
+        return view('Shop.shop4');
     }
 }
