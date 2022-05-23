@@ -60,6 +60,26 @@ class KeuanganController extends Controller
  
         return redirect('/loginmur');
     }
+    function delete($no)
+    {
+        $data=keuangan::find($no);
+        $data->delete();
+        return redirect('set');
+    }
+    function showData($id)
+    {
+        $nis = Siswa::all();
+        $data= Keuangan::find($id);
+        return view('kas.editt',compact('nis','data'));
+    }
+    function update(Request $req)
+    {
+        $data=Keuangan::find($req->id);
+        $data->harga=$req->harga;
+        $data->keterangan=$req->keterangan;
+        $data->save();
+        return redirect('set');
+    }
     // /\ Register System//
 
     // \/ Login System //
@@ -73,15 +93,7 @@ class KeuanganController extends Controller
         
         return redirect('/dashboard');
     }
-    // /\ Login System //
 
-    // Data //
-
-    function profiledata2($id)
-    {
-        $data= murid::find($id);
-        return view('layout.profile')->with('data',$data);
-    }
     public function dashboard(){
         $dtsiswa = murid::all();
         return view('layout.dashboard',compact('dtsiswa'));
@@ -148,29 +160,6 @@ class KeuanganController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function edit(Keuangan $keuangan)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Keuangan  $keuangan
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, Keuangan $keuangan)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\Keuangan  $keuangan
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(Keuangan $keuangan)
     {
         //
     }

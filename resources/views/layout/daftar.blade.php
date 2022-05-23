@@ -18,7 +18,7 @@
 
   <div class="container">
   <label for="keuangan_id"><b>No</b></label>
-    <input type="number" placeholder="Masukan Nomor" name="keuangan_id" required><br><br>
+    <input type="number" placeholder="Masukan Nomor " name="keuangan_id" required><br><br>
 
     <label for="nis"><b>NIS</b></label><br>
     <input type="number" placeholder="Masukan NIS MAX=10" name="nis" pattern="1234567890" onKeyPress="if(this.value.length==10) return false;" required><br><br>
@@ -74,7 +74,7 @@
     <button class="btnsub" type="submit">Daftar</button>
   </div>
 
-  <div class="container" style="background-color:#f1f1f1">
+  <div class="container">
     <a href="/list"><button type="button" class="cancelbtn">Kembali</button></a>
   </div>
 </form> 

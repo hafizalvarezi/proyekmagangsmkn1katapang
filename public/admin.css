@@ -9,7 +9,7 @@
 }
 body{
     min-width: 100vh;
-    background: rgb(2,0,36);
+    background:rgb(181, 171, 171);
     background: linear-gradient(rgba(118,184,213,0.92));
 }
 html, body {
@@ -88,7 +88,7 @@ html, body {
 }
 
 .huhe{
-    color: #eee;
+    color: green;
     position: absolute;
     left: 490px;
     top: 1px;
@@ -99,7 +99,7 @@ html, body {
     text-align: center;
 }
 .adm1{
-    background: #5463FF;
+    background: green;
     color: white;
     border: 1px solid white;
     border-collapse: collapse;
@@ -114,7 +114,7 @@ html, body {
     letter-spacing: 1px;
 }
 tr:hover {
-    background-color: coral;
+    background-color: black;
 }
 td, th {
     padding: 0.5rem;
@@ -131,7 +131,7 @@ td, th {
     text-align: left;
 }
 .tinot{
-    color: white;
+    color: rgb(26, 26, 35);
     position: absolute;
     top: 70px;
     left: 260px;

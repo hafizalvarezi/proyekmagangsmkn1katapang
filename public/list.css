@@ -9,7 +9,7 @@
 }
 body{
     min-width: 100vh;
-    background: rgb(10, 7, 73);
+    background: rgb(181, 171, 171);
     background: linear-gradient(rgba(118,184,213,0.92));
 }
 html, body {
@@ -79,7 +79,7 @@ html, body {
     padding-top: 10px;
 }
 .table{
-    background: rgb(10, 7, 73);
+    background: green;
     background: linear-gradient(rgba(118,184,213,0.92));
     color: white;
     width: 5%;
@@ -89,10 +89,13 @@ html, body {
     border-color: wheat;
     border-radius: 1px;
 }
+tr:hover {
+    background-color: black;
+}
 .tbl{
     border-style: solid;
     border-color: white;
-    background: #5463FF;
+    background: green;
     color: white;
     border: 1px solid white;
     border-collapse: collapse;

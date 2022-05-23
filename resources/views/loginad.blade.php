@@ -48,7 +48,7 @@
                     <input type="password" name="password" id="password" placeholder="Masukan Password" require>
                 </div>
                 <div class="sign">
-                    <h3>belum punya akun ? bisa signin <a href="/sign">DISINI</a></h3>
+                    <h3>belum punya akun ?<a href="/sign">  Klik Disini</a></h3>
                 </div>
             </div>
                 <div class="btn-sub">

@@ -28,8 +28,14 @@
                 </li>
                 <li>
                     <a href="/set">
-                        <span class="icon"><i class="fa-solid fa-sliders"></i></span>
-                        <span class="btn3">&nbsp; Keuangan</span>
+                        <span class="icon" class="active"><i class="fa-solid fa-money-bill-1-wave"></i></span>
+                        <span class="btn3" >&nbsp; Keuangan</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/komentar">
+                        <span class="icon"><i class="fa-solid fa-book"></i></span>
+                        <span class="btn3">&nbsp; Komentar</span>
                     </a>
                 </li>
             </ul>
@@ -65,7 +71,7 @@
                     <td>{{$item->siswa->nama}}</td>
                     <td>{{$item->harga}}</td>
                     <td class="em">{{$item->keterangan}}</td>
-                    <td><a class="btne" href={{"edit/".$item['id']}}>Edit |</a> <a class="btne" href={{"delete/".$item['id']}}>Hapus</a></td>
+                    <td><a class="btne" href={{"editt/".$item['id']}}>Edit |</a> <a class="btne" href={{"delete/".$item['id']}}>Hapus</a></td>
                 </tr>
                 @endforeach
                 </table>

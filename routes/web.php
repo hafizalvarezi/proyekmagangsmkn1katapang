@@ -46,6 +46,7 @@ Route::get('/galeri', [siswacontroller::class, 'galeri'])->name('galeri');
 Route::get('delete/{id}', [siswacontroller::class, 'delete']);
 Route::get('edit/{id}', [siswacontroller::class, 'showData']);
 Route::get('/list', [siswacontroller::class, 'list']);
+Route::get('/komentar', [siswacontroller::class, 'komentar']);
 Route::get('/admin', [siswacontroller::class, 'index']);
 Route::get('/eg', [siswacontroller::class, 'eg']);
 Route::get('galeri1', [siswacontroller::class, 'galeri1']);
@@ -70,6 +71,6 @@ Route::get('/dashboard', [KeuanganController::class, 'dashboard'])->name('dashbo
 Route::get('/about', [KeuanganController::class, 'about1'])->name('about');
 Route::get('/contact', [KeuanganController::class, 'contact1'])->name('contact');
 Route::get('/galeri', [KeuanganController::class, 'galeridata'])->name('galeri');
-Route::get('profile/{id}', [KeuanganController::class, 'profiledata2']);
-Route::get('/loginmur', [KeuanganController::class, 'loginmur'])->name('loginmur');
-Route::get('/regismur', [KeuanganController::class, 'regismur'])->name('regismur');
+Route::get('delete/{id}', [KeuanganController::class, 'delete']);
+Route::get('editt/{id}', [KeuanganController::class, 'showData']);
+Route::post('update/{id}', [KeuanganController::class, 'update']);

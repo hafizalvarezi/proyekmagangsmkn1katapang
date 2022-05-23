@@ -31,12 +31,12 @@
     <input type="text" placeholder="Rp.XXXXXX" name="harga" required><br><br>
 
     <label for="keterangan"><b>Keterangan :</b></label><br>
-    <input type="text" placehorder="-" name="keterangan" required><br>
+    <input type="text" placehorder="Masukkan Keterangan" name="keterangan" required><br>
 
     <button class="btnsub" type="submit">SUBMIT</button>
   </div>
 
-  <div class="container" style="background-color:#f1f1f1">
+  <div class="container">
     <a href="set"><button type="button" class="cancelbtn">Kembali</button></a>
   </div>
 </form> 

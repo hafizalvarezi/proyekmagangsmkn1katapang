@@ -150,8 +150,12 @@ public function galeri2(){
          return back()->with('loginError','Login Failed!');
      }
      public function list(){
-        $dtsiswa = siswa::Paginate(5);
+        $dtsiswa = siswa::Paginate(10);
         return view('list',compact('dtsiswa'));
+     }
+     public function komentar(){
+        $dtsiswa = pesan::Paginate(10);
+        return view('komentar',compact('dtsiswa'));
      }
      public function logout(Request $request){
 

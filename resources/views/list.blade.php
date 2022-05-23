@@ -28,8 +28,14 @@
                 </li>
                 <li>
                     <a href="/set">
-                        <span class="icon"><i class="fa-solid fa-sliders"></i></span>
+                        <span class="icon"><i class="fa-solid fa-money-bill-1-wave"></i></span>
                         <span class="btn3">&nbsp; Keuangan</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/komentar">
+                        <span class="icon"><i class="fa-solid fa-book"></i></span>
+                        <span class="btn3">&nbsp; Komentar</span>
                     </a>
                 </li>
             </ul>

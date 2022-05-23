@@ -48,7 +48,30 @@
         </div>
         <div class="huhe">
             <div class="tuing">
-                <h1>SELAMAT DATANG DI HALAMAN ADMIN</h1>
+                <h1>HALAMAN KOMENTAR</h1>
+            </div>
+        </div>
+        <div class="not">
+            <div class="tinot">
+                <h2><i class="fa-solid fa-bell"></i> Notifikasi</h2>
+            </div>
+            <div class="not-1">
+            <table class="adm1" border="1px" align="center" width="700">
+                <tr align="center">
+                    <th>NAMA</th>
+                    <th>KELAS/GURU MAPEL</th>
+                    <th>EMAIL</th>
+                    <th>PESAN</th>
+                </tr>
+                @foreach ($dtsiswa as $item)
+                <tr align="center">
+                    <td>{{$item->namleng}}</td>
+                    <td>{{$item->kls}}</td>
+                    <td class="em">{{$item->email}}</td>
+                    <td class="tb1">{{$item->pesan}}</td>
+                </tr>
+                @endforeach
+                </table>
             </div>
         </div>
     </div>

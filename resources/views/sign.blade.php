@@ -22,8 +22,12 @@
             </div>
         @enderror
             <div class="col">
+            <img src="background/ktpang.png" class="avatar">
                 <form action="/sign" method="POST">
                     @csrf
+                    <div class="title">
+                    <h1>Membuat Akun Baru</h1>
+                    </div>
                     <div class="col-1">
                         <label for="name">Masukan Nama</label><br>
                         <input type="text" name="name" id="name" placeholder="Masukan Nama Anda" require>
