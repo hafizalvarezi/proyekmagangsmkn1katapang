@@ -40,7 +40,7 @@
                 </div>
                 <br>
                 <div class="submit">
-                    <input type="submit">
+                    <input type="submit" value="Login">
                 </div>
                 <br>
             </form>

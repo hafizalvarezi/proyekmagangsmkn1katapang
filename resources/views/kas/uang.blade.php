@@ -17,10 +17,10 @@
   </div>
 
   <div class="container">
-    <label for="nis"><b>Nis</b></label><br>
+    <label for="siswa_id"><b>Nis</b></label><br>
       <tr>
               <td>Pilih NIS : 
-                <select name="nis" id="nis">
+                <select name="siswa_id" id="siswa_id">
                     <option disabled value>NIS</option>
                   @foreach ($nis as $item)
                     <option value="{{$item->id}}">{{$item->nis}}</option> 
@@ -50,8 +50,10 @@
       <option value="Rp 80.000">Rp 80.000</option>
       <option value="Rp 85.000">Rp 85.000</option>
       <option value="Rp 90.000">Rp 90.000</option>
-      <option value="Rp 950.000">Rp 95.000</option>
+      <option value="Rp 95.000">Rp 95.000</option>
       <option value="Rp 100.000">Rp 100.000</option>
+      <option value="Rp 1.000">Pilihan Kapitalis</option>
+      <option value="Rp 50.000.000">Pilihan Sultan</option>
     </select><br><br>
     <label for="keterangan"><b>Keterangan :</b></label><br>
     <input type="text" placehorder="Masukan Keterangan Disini" name="keterangan" required><br>

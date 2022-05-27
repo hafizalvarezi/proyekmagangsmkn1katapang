@@ -22,8 +22,20 @@
                 </li>
                 <li>
                     <a href="/list">
-                        <span class="icon"><i class="fa-solid fa-address-card"></i></i></span>
+                        <span class="icon"><i class="fa-solid fa-address-card"></i></span>
                         <span class="btn2">&nbsp; List Data Siswa</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/kasad">
+                        <span class="icon"><i class="fa-solid fa-coins"></i></span>
+                        <span class="btn3">&nbsp; Keuangaan Sekolah</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/gurued">
+                        <span class="icon"><i class="fa-solid fa-chalkboard-user"></i></span>
+                        <span class="btn4">&nbsp; Data guru</span>
                     </a>
                 </li>
             </ul>

@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    overflow: hidden;
+}
+.card{
+    background-color: #9A86A4;
+    width: 300px;
+    height: 656px;
+}
+.poto{
+    margin-top: 10px;
+    margin-left: 40px;
+}
+.nama1{
+    margin-left: 10px;
+    margin-top: 30px;
+    font-size: 35px;
+}
+.card a{
+    font-family: 'Koulen', cursive;
+    border-radius: 20px;
+    text-align: center;
+    background-color: white;
+    width: 100px;
+    margin-top: 348px;
+    margin-left: 10px;
+    display: block;
+    color: black;
+    font-size: 30px;
+    text-decoration: none;
+}
+.col:hover{
+    background-color: grey;
+}
+.card2{
+    background-color: #D5D8B5;
+    position: absolute;
+    height: 656px;
+    width: 1065px;
+    left: 300px;
+    top: 0px;
+    font-family: 'Koulen', cursive;
+}
+.card2 input[type=text], select {
+    width: 190px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.card2 input[type=password], select {
+    width: 190px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.btn1{
+    background-color: #36A9AE;
+    background-image: linear-gradient(#37ADB2, #329CA0);
+    border: 1px solid #2A8387;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0 1px 1px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 17px;
+    text-align: center;
+    transition: box-shadow .05s ease-in-out,opacity .05s ease-in-out;
+    text-decoration: none;
+    touch-action: manipulation;
+    width: 110px;
+}
+  
+.btn1:hover {
+    box-shadow: rgba(255, 255, 255, 0.3) 0 0 2px inset, rgba(0, 0, 0, 0.4) 0 1px 2px;
+    text-decoration: none;
+    transition-duration: .15s, .15s;
+}
+  
+.btn1:active {
+    box-shadow: rgba(0, 0, 0, 0.15) 0 2px 4px inset, rgba(0, 0, 0, 0.4) 0 1px 1px;
+}
+  
+.btn1:disabled:hover {
+    box-shadow: none;
+}
+
+.btn2{
+    background-color: #36A9AE;
+    background-image: linear-gradient(#37ADB2, #329CA0);
+    border: 1px solid #2A8387;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0 1px 1px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 17px;
+    text-align: center;
+    transition: box-shadow .05s ease-in-out,opacity .05s ease-in-out;
+    text-decoration: none;
+    touch-action: manipulation;
+    width: 110px;
+}
+  
+.btn2:hover {
+    box-shadow: rgba(255, 255, 255, 0.3) 0 0 2px inset, rgba(0, 0, 0, 0.4) 0 1px 2px;
+    text-decoration: none;
+    transition-duration: .15s, .15s;
+}
+  
+.btn2:active {
+    box-shadow: rgba(0, 0, 0, 0.15) 0 2px 4px inset, rgba(0, 0, 0, 0.4) 0 1px 1px;
+}
+  
+.btn2:disabled:hover {
+    box-shadow: none;
+}
+
+.btn3{
+    background-color: #36A9AE;
+    background-image: linear-gradient(#37ADB2, #329CA0);
+    border: 1px solid #2A8387;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0 1px 1px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 17px;
+    text-align: center;
+    transition: box-shadow .05s ease-in-out,opacity .05s ease-in-out;
+    text-decoration: none;
+    touch-action: manipulation;
+    width: 110px;
+}
+  
+.btn3:hover {
+    box-shadow: rgba(255, 255, 255, 0.3) 0 0 2px inset, rgba(0, 0, 0, 0.4) 0 1px 2px;
+    text-decoration: none;
+    transition-duration: .15s, .15s;
+}
+  
+.btn3:active {
+    box-shadow: rgba(0, 0, 0, 0.15) 0 2px 4px inset, rgba(0, 0, 0, 0.4) 0 1px 1px;
+}
+  
+.btn3:disabled:hover {
+    box-shadow: none;
+}
+
+.menu1{
+    font-family: 'Koulen', cursive;
+}
+.menu1 h2{
+    text-align: left;
+    font-size: 50px;
+}
+.menu2{
+    position: absolute;
+    left: 30px;
+}
+.balik{
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+.back1{
+    background: #bb082f;
+    border: none;
+    border-style: solid;
+    border-radius: 20px;
+    color: white;
+    padding: 4px 34px;
+    text-align: center;
+    border-color: black;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Koulen', cursive;
+    position: absolute;
+    left: 10px;
+    bottom: 1px;
+}
+.back1:hover{
+    background: #e7758e;
+}

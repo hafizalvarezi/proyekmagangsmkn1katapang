@@ -27,7 +27,7 @@ class siswacontroller extends Controller
         return view('layout.about');
     }
     public function mur(){  
-         $dtsiswa = siswa::Paginate(23);
+         $dtsiswa = siswa::simplePaginate(20);
         return view('layout.mur', compact('dtsiswa'));
     }
     public function eg(){
@@ -49,7 +49,6 @@ class siswacontroller extends Controller
         //dd($request->all());
         siswa::create([
         'nis'=>$request->nis,
-        'keuangan_id'=>$request->keuangan_id,
         'nama'=>$request->nama,
         'jkel'=>$request->jkel,
         'jrs'=>$request->jrs,
@@ -65,16 +64,6 @@ class siswacontroller extends Controller
         $data->delete();
         return redirect('list');
     }
-
-    // function galeri1()
-    // {
-    //     return view('layout.galeri1');
-    // }
-
-    // function galeri2()
-    // {
-    //     return view('layout.galeri2');
-    // }
 
     function showData($id)
     {

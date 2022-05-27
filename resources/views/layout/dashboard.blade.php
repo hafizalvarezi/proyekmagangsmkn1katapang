@@ -8,21 +8,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link href="http://fonts.cdnfonts.com/css/horror-type" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="icon" href="/background/ktpang.png" />
     <title>SMKN 1 KATAPANG</title>
 </head>
 <body>
 <img class="title-satu" src="background/title.png" alt="">
     <nav>
-        <input type="checkbox" id="check">
-        <label for="check">
-            <i class="fas fa-clock fa-xs"></i>
-        </label>
         <ul>
-            <li><a style="text-decoration:none"  class="active" href="/dashboard">Home</a></li>
-            <li><a style="text-decoration:none" href="/about">About</a></li>
-            <li><a style="text-decoration:none" href="/contact">Contact</a></li>
-            <li><a style="text-decoration:none" href="/galeri">Galeri</a></li>
-            <li><a style="text-decoration:none" href="/mur">Daftar Siswa</a></li>
+            <li><a style="text-decoration:none;" class="active" href="/dashboard">Home</a></li>
+            <li><a style="text-decoration:none;" href="/about">About</a></li>
+            <li><a style="text-decoration:none;" href="/contact">Contact</a></li>
+            <li><a style="text-decoration:none;" href="/galeri">Galeri</a></li>
+            <li><a style="text-decoration:none;" href="/mur">Daftar Siswa</a></li>
+            <li><a style="text-decoration:none;" href="/guru">Guru</a></li>
             <li><a style="text-decoration:none;" class="pro" href="/kas">Info Pembayaran</a></li>
         </ul>
     </nav>

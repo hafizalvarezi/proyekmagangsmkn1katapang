@@ -30,7 +30,7 @@ body{
 }
 .tab th{
     font-family: 'Bebas Neue', cursive;
-    color: black;
+    color: rgb(44, 44, 44);
     letter-spacing: 2px;
 }
 .tab{

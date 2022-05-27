@@ -11,18 +11,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="/background/ktpang.png" />
     <title>SMKN 1 KATAPANG</title>
 </head>
 <body>
 <img class="title-satu" src="background/title.png" alt="">
-    <nav>
+      <nav>
         <ul>
             <li><a style="text-decoration:none" href="/dashboard">Home</a></li>
             <li><a style="text-decoration:none" href="/about">About</a></li>
             <li><a style="text-decoration:none" class="active" href="/contact">Contact</a></li>
             <li><a style="text-decoration:none" href="/galeri">Galeri</a></li>
             <li><a style="text-decoration:none" href="/mur">Daftar Siswa</a></li>
-            <li><a style="text-decoration:none;" class="pro" href="/kas">Info Pembayaran</a></li>
+            <li><a style="text-decoration:none"href="/guru">Guru</a></li>
+            <li><a style="text-decoration:none" class="pro" href="/kas">Info Pembayaran</a></li>
         </ul>
     </nav>
   <div class="card-body">
@@ -33,7 +35,7 @@
 
     <div class="container" align="center">
       <img align =""src="background/ktpang.png" class="card-img-top" alt="..." style="width: 210px" height="200px"><br><br> 
-      <div class="card" style="width: 450px" height="200px" >
+      <div class="card" style="width: 490px" height="200px" >
           <h5 class="card-title" align="center">Contact Us</h5>
           <h6 align="center">Gunakan formulir ini untuk menghubungi kami. Beri tahu kami melalui pertanyaan, saran, dan masalah Anda dengan mengisi formulir kontak di bawah ini.</h6>
           <label for="namleng" align="left"><b>Nama Lengkap*</b></label>
@@ -74,7 +76,6 @@
         <li class="teks2"><a href="#" class="teks">About</a></li>
         <li class="teks2"><a href="#" class="teks">Kompetensi</a></li>
         <li class="teks2"><a href="#" class="teks">Covid-19</a></li>
-        <li class="teks2"><a href="#" class="teks">Login</a></li>
         <li class="teks2"><a href="#" class="teks">Terms</a></li>
         <li class="teks2"><a href="#" class="teks">Privacy Policy</a></li>
       </ul>

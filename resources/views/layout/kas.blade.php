@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="kas.css">
+    <link rel="icon" href="/background/ktpang.png" />
     <title>Info Pembayaran</title>
 </head>
 <body>
@@ -32,8 +33,8 @@
                 </tr>
                 @foreach ($data as $item)
                 <tr align="center">
-                    <td>{{$item->siswa['nis']}}</td>
-                    <td>{{$item->siswa['nama']}}</td>
+                    <td>{{$item->siswa->nis}}</td>
+                    <td>{{$item->siswa->nama}}</td>
                     <td>{{$item->harga}}</td>
                     <td class="em">{{$item->keterangan}}</td>
                 </tr>

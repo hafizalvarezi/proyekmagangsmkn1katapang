@@ -1,3 +1,6 @@
+body{
+  overflow-x: hidden;
+}
 form {
     border: 6px solid #f1f1f1;
     margin-bottom: 10px;

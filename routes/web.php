@@ -5,6 +5,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\pesancontroller;
 use App\Http\Controllers\siswacontroller;
 use App\Http\Controllers\KeuanganController;
+use App\Http\Controllers\UploadGambarController;
+use App\Models\UploadGambar;
 
 /*
 |--------------------------------------------------------------------------
@@ -43,6 +45,8 @@ route::get('/sign', function(){
 //     });
 // });
 
+
+//GET//
 Route::get('/daftar', [siswacontroller::class, 'daftar'])->name('daftar');
 Route::get('/mur', [siswacontroller::class, 'mur'])->name('mur');
 Route::get('/siswa', [siswacontroller::class, 'index'])->name('siswa');
@@ -64,15 +68,13 @@ Route::post('/sign', [siswacontroller::class, 'store']);
 Route::post('/loginad', [siswacontroller::class, 'authenticate']);
 Route::post('/logout', [siswacontroller::class, 'logout']);
 Route::post('/simpanpesan', [pesancontroller::class, 'simpanpesan'])->name('simpanpesan');
-Route::post('/regismur', [KeuanganController::class, 'daftarsiswa']);
-Route::post('/loginmur', [KeuanganController::class, 'authenticate']);
 
 // KEUANGAN //
 Route::post('/simpankas', [KeuanganController::class, 'simpankas'])->name('simpankas');
 Route::get('/uang', [KeuanganController::class, 'uang'])->name('uang');
-Route::get('/loginmur', [KeuanganController::class, 'loginmur'])->name('loginmur');
-Route::get('/regismur', [KeuanganController::class, 'regismur'])->name('regismur');
 Route::get('kas', [KeuanganController::class, 'kas'])->name('kas');
+Route::get('hapus/{id}', [KeuanganController::class, 'hapus']);
+Route::get('kasad', [KeuanganController::class, 'kasad'])->name('kasad');
 Route::get('editkas',[KeuanganController::class, 'editkas'])->name('editkas');
 
 //Dashboard//
@@ -82,3 +84,19 @@ Route::get('/contact', [akuncontroller::class, 'contact1'])->name('contact');
 Route::get('/galeri', [akuncontroller::class, 'galeridata'])->name('galeri');
 Route::get('galeri1', [akuncontroller::class, 'galeri1']);
 Route::get('galeri2', [akuncontroller::class, 'galeri2']);
+Route::get('profile', [akuncontroller::class, 'profile']);
+
+//Profile//
+Route::post('/regismur', [akuncontroller::class, 'daftarsiswa']);
+Route::post('/loginmur', [akuncontroller::class, 'authenticate']);
+Route::post('/keluar', [akuncontroller::class, 'keluar']);
+Route::get('/loginmur', [akuncontroller::class, 'loginmur'])->name('loginmur');
+Route::get('/regismur', [akuncontroller::class, 'regismur'])->name('regismur');
+Route::post('/loginmur', [akuncontroller::class, 'authenticate']);
+
+//Upload
+Route::get('guru', [UploadGambarController::class, 'guru']);
+Route::get('gurued', [UploadGambarController::class, 'gurued']);
+Route::get('/buat',[UploadGambarController::class,'buat']);
+Route::post('/simpangambar', [UploadGambarController::class,'simpangambar'])->name('simpangambar');
+Route::get('delete/{id}', [UploadGambarController::class, 'delete']);

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="dft.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="icon" href="/background/ktpang.png" />
     <title>Daftar</title>
 </head>
 <body>
@@ -17,9 +18,6 @@
   </div>
 
   <div class="container">
-    <label for="keuangan_id"><b>Nomer</b></label><br>
-    <input type="number" placeholder="Masukan Nomer" name="keuangan_id" pattern="1234567890" onKeyPress="if(this.value.length==2) return false;" required><br><br>
-
     <label for="nis"><b>NIS</b></label><br>
     <input type="number" placeholder="Masukan NIS MAX=10" name="nis" pattern="1234567890" onKeyPress="if(this.value.length==10) return false;" required><br><br>
 

@@ -10,7 +10,7 @@
 <SCRIPT LANGUAGE="JavaScript">
 
 var guessme=Math.round(Math.random()*(99)+1);
-var speech='Guess my number (from 1 to 100)';
+var speech='Tebak Nomor (Dari 1 sampai 100)';
 
 function process(mystery) {
 var guess=document.forms.guessquiz.guess.value;
@@ -27,12 +27,12 @@ document.location=document.location;
 
 if (mystery<guess)
 {
-speech='Less than '+ guess;
+speech='Dibawah angka '+ guess;
 }
 
 if (mystery>guess)
 {
-speech='Greater than '+ guess;
+speech='Diatas angka '+ guess;
 }
 
 if (guess=='')
@@ -52,7 +52,7 @@ document.forms.guessquiz.prompt.value=speech; document.forms.guessquiz.guess.foc
 <TABLE ALIGN="CENTER" BGCOLOR="#888888" BORDER="3" CELLPADDING="5">
 <TR>
 <TD BGCOLOR="#004080">
-<FONT COLOR="#ffffff" FACE="Arial"><B>GUESS MY NUMBER (1 - 100)</B></FONT>
+<FONT COLOR="#ffffff" FACE="Arial"><B>Tebak Nomor (1 - 100)</B></FONT>
 </TD>
 </TR>
 <TR>
