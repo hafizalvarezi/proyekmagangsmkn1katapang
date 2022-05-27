@@ -28,7 +28,7 @@ class siswacontroller extends Controller
         return view('layout.about');
     }
     public function mur(){  
-         $dtsiswa = siswa::Paginate(23);
+         $dtsiswa = siswa::simplePaginate(2);
         return view('layout.mur', compact('dtsiswa'));
     }
     public function eg(){
@@ -73,7 +73,6 @@ public function galeri2(){
         //dd($request->all());
         siswa::create([
         'nis'=>$request->nis,
-        'keuangan_id'=>$request->keuangan_id,
         'nama'=>$request->nama,
         'jkel'=>$request->jkel,
         'jrs'=>$request->jrs,
@@ -150,7 +149,7 @@ public function galeri2(){
          return back()->with('loginError','Login Failed!');
      }
      public function list(){
-        $dtsiswa = siswa::Paginate(10);
+        $dtsiswa = siswa::simplePaginate(20);
         return view('list',compact('dtsiswa'));
      }
      public function komentar(){

@@ -13,9 +13,12 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('nis', function (Blueprint $table) {
+        Schema::create('uploadgambar', function (Blueprint $table) {
             $table->id();
-            $table->string('nis');
+            $table->integer('nuptk');
+            $table->string('gambar');
+            $table->string('nama');
+            $table->string('mapel');
             $table->timestamps();
         });
     }
@@ -27,6 +30,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('nis');
+        Schema::dropIfExists('uploadgambar');
     }
 };

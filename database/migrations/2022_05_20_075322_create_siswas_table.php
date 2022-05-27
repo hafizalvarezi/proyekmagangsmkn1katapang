@@ -22,8 +22,6 @@ return new class extends Migration
             $table->string('ttg');
             $table->string('bulan');
             $table->string('tahun');
-            $table->integer('keuangan_id');
-
         });
     }
 

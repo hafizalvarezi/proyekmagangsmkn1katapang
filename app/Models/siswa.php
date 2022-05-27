@@ -8,11 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class siswa extends Model
 {
     protected $table = 'Siswa';
-    protected $fillable = ['id','nis','nama','jkel','jrs','ttg','bulan','tahun','keuangan_id'];
+    protected $fillable = ['id','nis','nama','jkel','jrs','ttg','bulan','tahun'];
     public $timestamps=false;
 
-    public function keuangan(){
-        return $this->belongsTo(Keuangan::class);
+    public function Keuangan(){
+        return $this->hasMany('App\Models\Keuangan');
     }
 
 }

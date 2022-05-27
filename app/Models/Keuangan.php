@@ -7,10 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Keuangan extends Model
 {
-    protected $table = 'keuangan';
-    protected $fillable = ['id','harga','keterangan'];
+    protected $table = 'Keuangan';
+    protected $primaryKey = 'id';
+    protected $fillable = ['id','siswa_id','harga','keterangan'];
 
     public function siswa(){
-        return $this->hasOne(Siswa::class);
+        return $this->belongsTo('App\Models\Siswa');
     }
+    
 }

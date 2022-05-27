@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\pesancontroller;
 use App\Http\Controllers\siswacontroller;
 use App\Http\Controllers\KeuanganController;
+use App\Http\Controllers\UploadGambarController;
 
 /*
 |--------------------------------------------------------------------------
@@ -74,3 +75,9 @@ Route::get('/galeri', [KeuanganController::class, 'galeridata'])->name('galeri')
 Route::get('delete/{id}', [KeuanganController::class, 'delete']);
 Route::get('editt/{id}', [KeuanganController::class, 'showData']);
 Route::post('update/{id}', [KeuanganController::class, 'update']);
+
+// GURU
+Route::get('/gambar',[UploadGambarController::class,'gambar']);
+Route::get('/create',[UploadGambarController::class,'create']);
+Route::post('/simpangambar', [UploadGambarController::class,'simpangambar'])->name('simpangambar');
+Route::get('delete/{id}', [UploadGambarController::class, 'delete']);

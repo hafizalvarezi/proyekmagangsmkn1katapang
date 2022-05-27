@@ -23,7 +23,7 @@
                 <li>
                     <a href="/list">
                         <span class="icon"><i class="fa-solid fa-address-card"></i></i></span>
-                        <span class="btn2">&nbsp; List Data Siswa</span>
+                        <span class="btn2">&nbsp;  Data Siswa</span>
                     </a>
                 </li>
                 <li>
@@ -38,6 +38,12 @@
                         <span class="btn3">&nbsp; Komentar</span>
                     </a>
                 </li>
+                <li>
+                    <a href="/gambar">
+                        <span class="icon"><i class="fa-solid fa-chalkboard-user"></i></span>
+                        <span class="btn3">&nbsp;Data Guru</span>
+                    </a>
+                </li>
             </ul>
             <div class="log">
                 <form action="/logout" method="post">
@@ -47,14 +53,15 @@
             </div>
         </div>
         <div class="huhe">
-            <div class="tuing">
+            <div class="hal">
+                <h1>HALAMAN DATA SISWA</h1>
+            </div>
             <div class="but">
             <a href="{{route('daftar')}}"><button type="button" class="dft">Daftarkan Siswa</button></a>
         </div>
         <div class="table">
         <table class="tbl" border="1px" align="center" width="1116">
                 <tr align="center">
-                    <td>ID</td>
                     <td>NO</td>
                     <td>NIS</td>
                     <td>Nama</td>
@@ -66,7 +73,6 @@
                 @foreach ($dtsiswa as $item)
                 <tr align="center">
                     <td>{{$item['id']}}</td>
-                    <td>{{$item['keuangan_id']}}</td>
                     <td>{{$item->nis}}</td>
                     <td>{{$item->nama}}</td>
                     <td>{{$item->jkel}}</td>
@@ -79,5 +85,8 @@
             </div>
         </div>
     </div>
+    <div class="page">
+{{ $dtsiswa->links() }}
+        </div>
 </body>
 </html>

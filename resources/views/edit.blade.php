@@ -9,6 +9,7 @@
 <body>
     <h1 align = "center"><b>EDIT DATA SISWA</b></h1>
     <form action="/edit" method="POST">
+        {{csrf_field()}}
     <table align="center" border="10px" cellpadding="10px" width = "50%" cellspacing="0px">
         <tr>
             <td><b>NIS</b>

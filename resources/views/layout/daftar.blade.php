@@ -9,7 +9,6 @@
     <title>Daftar</title>
 </head>
 <body>
-  <!--{{route('simpandaftar')}} -->
 <form action="{{route('simpandaftar')}}" method="post" enctype="multipart/form-data">
   {{csrf_field()}}
   <div class="imgcontainer">
@@ -17,12 +16,8 @@
   </div>
 
   <div class="container">
-  <label for="keuangan_id"><b>No</b></label>
-    <input type="number" placeholder="Masukan Nomor " name="keuangan_id" required><br><br>
-
     <label for="nis"><b>NIS</b></label><br>
     <input type="number" placeholder="Masukan NIS MAX=10" name="nis" pattern="1234567890" onKeyPress="if(this.value.length==10) return false;" required><br><br>
-
     <label for="nama"><b>Nama</b></label>
     <input type="text" placeholder="Masukan nama Siswa" name="nama" required>
 
@@ -68,8 +63,8 @@
 						<?php for( $i = 1980; $i <= 2022; $i++ ) : ?>
 							<option><?= $i; ?></option>
 						<?php endfor; ?>
-					</select>
-    </td> 
+					</select><br>
+    </td><br>
 
     <button class="btnsub" type="submit">Daftar</button>
   </div>

@@ -17,13 +17,24 @@ class KeuanganController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function set(){
-        $data = Keuangan::simplePaginate(10);
+        $data = Keuangan::simplePaginate(5);
         return view('set',compact('data'));
     }
     public function uang(){
         $nis = Siswa::all();
         return view('kas.uang',compact('nis'));
     }
+    //Data//
+
+    public function simpankas(Request $request){
+        //dd($request->all());
+        Keuangan::create([
+            'siswa_id'=>$request->siswa_id,
+            'harga'=>$request->harga,
+            'keterangan'=>$request->keterangan,
+            ]);
+        return redirect('/set');
+      }
     public function loginmur(){
         return view('layout.loginmur');
     }
@@ -118,49 +129,5 @@ class KeuanganController extends Controller
         $dtsiswa = murid::all();
         return view('layout.galeri2',compact('dtsiswa'));
     }
-    //Data//
-
-        public function simpankas(Request $request){
-            //dd($request->all());
-            Keuangan::create([
-                'nis_id'=>$request->nis_id,
-                'harga'=>$request->harga,
-                'keterangan'=>$request->keterangan,
-                ]);
-            return redirect('/set');
-          }
-
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Keuangan  $keuangan
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Keuangan $keuangan)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\Keuangan  $keuangan
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Keuangan $keuangan)
-    {
-        //
-    }
+    
 }

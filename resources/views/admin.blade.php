@@ -23,7 +23,7 @@
                 <li>
                     <a href="/list">
                         <span class="icon"><i class="fa-solid fa-address-card"></i></i></span>
-                        <span class="btn2">&nbsp; List Data Siswa</span>
+                        <span class="btn2">&nbsp; Data Siswa</span>
                     </a>
                 </li>
                 <li>
@@ -36,6 +36,12 @@
                     <a href="/komentar">
                         <span class="icon"><i class="fa-solid fa-book"></i></span>
                         <span class="btn3">&nbsp; Komentar</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/gambar">
+                        <span class="icon"><i class="fa-solid fa-chalkboard-user"></i></span>
+                        <span class="btn3">&nbsp;Data Guru</span>
                     </a>
                 </li>
             </ul>

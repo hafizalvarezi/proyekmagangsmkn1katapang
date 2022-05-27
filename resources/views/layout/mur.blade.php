@@ -39,7 +39,7 @@
               </thead>
                 @foreach ($dtsiswa as $item)
                 <tr align="center">
-                    <td>{{$item['keuangan_id']}}</td>
+                    <td>{{$item['id']}}</td>
                     <td>{{$item->nis}}</td>
                     <td>{{$item->nama}}</td>
                     <td>{{$item->jkel}}</td>
