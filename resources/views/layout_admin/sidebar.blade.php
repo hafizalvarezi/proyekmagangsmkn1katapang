@@ -47,6 +47,11 @@
                   Data Gambar
                 </a>
               </li>
+              <li class="nav-item">
+                <a href="{{route('dtpesanan')}}" class="nav-link active">
+                  Data Pesanan
+                </a>
+              </li>
         </ul>
       </nav>
       <!-- /.sidebar-menu -->

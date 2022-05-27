@@ -7,18 +7,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <html lang="en">
 <head>
     @include('layout_admin.head')
-    <style>
-  .pagination {
-    position: fixed;
-    top: 85%;
-    left: 20%;
-}
-.tambah {
-    position: sticky;
-    top: 20%;
-    left: 150%;
-}
-    </style>
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
@@ -35,12 +23,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Data Gambar</h1>
+            <h1 class="m-0">Data Menu</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Data Gambar</li>
+              <li class="breadcrumb-item"><a href="{{route('admin')}}">Home</a></li>
+              <li class="breadcrumb-item active">Data Menu</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -52,39 +40,25 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <div class="content">
       <div class="container-fluid">
         <div class="row">
-  <table border="1" cellpadding= "5" cellspacing= "0">
-    <tr>     
-      <td>Id</td>
-      <td>Nama Gambar</td>
-      <td>Gambar</td>
-      <td>Harga</td>
-      <td>Edit</td>
-    </tr>
-@foreach($dtGambar as $item)
-    <tr>
-      <td>{{$loop->iteration}}</td>
-      <td>{{$item->nama}}</td>
-      <td>
-        <img src="{{asset('img/'.$item->gambar)}}" height="70px" width="70px" alt="" srcset="">
-      </td>
-      <td>{{$item->harga}}</td>
-      <td>
-          <a href="{{url('editdata',$item->id)}}">Edit</a>|<a href="{{url('deletedata',$item->id)}}">Delete</a>
-      </td>
-
-</tr>
-@endforeach
-
-</table>
-<div class="tambah">
-<tr><a href="{{route('create_gambar')}}">Tambah Data</a></tr>
-</div>
-        </div>
-        <div class="pagination">
-          {{$dtGambar->links()}}
+        <center>
+    <h2>Edit Data</h2>
+  <form action="{{url('updatedata',$gambar->id)}}" method ="post"> 
+    {{csrf_field()}}
+        <table>
+            <tr>
+                <td>Title :  <input type="text" name="nama" value="{{$gambar->nama}}"></td>
+            </tr>
+            <tr>
+                <td>Harga :  <input type="text" name="harga" value="{{$gambar->harga}}"></td>
+            </tr>
+            <tr>
+                <td>Gambar :<input type="file" name="gambar" value="{{$gambar->gambar}}"></td>
+            </tr>
+            <td><button type="submit">Simpan</button></td>
+  </form>
+  </center>
         </div>
       </div>
- 
   <!-- /.content-wrapper -->
 
   <!-- Control Sidebar -->

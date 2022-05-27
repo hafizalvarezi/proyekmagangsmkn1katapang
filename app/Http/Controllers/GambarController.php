@@ -14,7 +14,7 @@ class GambarController extends Controller
      */
     public function index()
     {
-        $dtGambar = Uploadgambar::latest()->get();
+        $dtGambar = Uploadgambar::simplePaginate(4);
         return view('admin.UploadGambar',compact('dtGambar'));
     }
 
@@ -41,6 +41,7 @@ class GambarController extends Controller
 
         $dtUpload = new Uploadgambar;
         $dtUpload->nama = $request->nama;
+        $dtUpload->harga = $request->harga;
         $dtUpload->gambar = $namaFile;
 
         $nm->move(public_path().'/img', $namaFile);
@@ -69,7 +70,8 @@ class GambarController extends Controller
      */
     public function edit($id)
     {
-        //
+        $gambar   = Uploadgambar::find($id);
+        return view('admin.edit_gambar',compact('gambar'));
     }
 
     /**
@@ -81,7 +83,9 @@ class GambarController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $gambar  = Uploadgambar::findorfail($id);
+        $gambar->update($request->all());
+        return redirect('data_gambar');
     }
 
     /**
@@ -90,8 +94,10 @@ class GambarController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function delete($id)
     {
-        //
+        $gambar   = Uploadgambar::find($id);
+        $gambar->delete();
+        return back();
     }
 }

@@ -39,7 +39,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="{{route('admin')}}">Home</a></li>
               <li class="breadcrumb-item active">Data Menu</li>
             </ol>
           </div><!-- /.col -->
@@ -65,7 +65,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <td>{{$item->Menu}}</td>
       <td>{{$item->Harga}}</td>
     <td>
-    <a href="{{url('editdata',$item->id)}}">Edit</a>|<a href="{{url('deletedata',$item->id)}}">Delete</a>
+    <a href="{{url('editdata',$item->id)}}">Edit</a>|<a href="{{url('delete',$item->id)}}">Delete</a>
 </td>
 </tr>
 @endforeach

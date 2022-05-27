@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Menu;
+use App\Models\Pembelian;
 use Illuminate\Http\Request;
 
 class AdminController extends Controller
@@ -14,7 +15,7 @@ class AdminController extends Controller
      */
     public function index()
     {
-        $dtmenu = menu::paginate(5);
+        $dtmenu = Menu::paginate(5);
         return view('admin.data',compact('dtmenu'));
     }
 
@@ -93,4 +94,11 @@ class AdminController extends Controller
         $menu->delete();
         return back();
     }
+
+    public function pesanan()
+    {
+        $dtbeli = Pembelian::all();
+        return view('admin.pemesanan',compact('dtbeli'));
+    }
+
 }

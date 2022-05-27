@@ -29,19 +29,16 @@ Route::post('simpanregistrasi',[LoginController::class,'simpanregistrasi'])->nam
 Route::get('about',[sitecontroller::class,'about'])->name('about');
 Route::get('contact',[sitecontroller::class,'contact'])->name('contact');
 
-Route::get('shop1',[sitecontroller::class,'shop1'])->name('shop1');
-Route::get('shop2',[sitecontroller::class,'shop2'])->name('shop2');
-Route::get('shop3',[sitecontroller::class,'shop3'])->name('shop3');
-Route::get('shop4',[sitecontroller::class,'shop4'])->name('shop4');
-
+Route::get('shop',[sitecontroller::class,'shop'])->name('shop');
 
 Route::get('admin',[BerandaController::class,'index'])->name('admin');
 Route::get('dtmenu',[AdminController::class,'index'])->name('dtmenu');
+Route::get('dtpesanan',[AdminController::class,'pesanan'])->name('dtpesanan');
 Route::get('createdata',[AdminController::class,'create'])->name('createdata');
 Route::post('simpandata',[AdminController::class,'store'])->name('simpandata');
 Route::get('editdata/{id}',[AdminController::class , 'edit'])->name('editedata');
 Route::post('/updatedata/{id}',[AdminController::class , 'update'])->name('updatedata');
-Route::get('deletedata/{id}',[AdminController::class,'delete'])->name('deletedata');
+Route::get('delete/{id}',[AdminController::class,'delete'])->name('delete');
 
 Route::group(['middleware' => ['auth']], function(){
     Route::get('home',[sitecontroller::class,'home'])->name('home');
@@ -49,4 +46,12 @@ Route::group(['middleware' => ['auth']], function(){
 
 Route::get('data_gambar',[GambarController::class,'index'])->name('data_gambar');
 Route::get('create_gambar',[GambarController::class,'create'])->name('create_gambar');
-Route::get('simpangambar',[GambarController::class,'store'])->name('simpangambar');
+Route::post('simpangambar',[GambarController::class,'store'])->name('simpangambar');
+Route::get('deletedata/{id}',[GambarController::class,'delete'])->name('deletedata');
+Route::get('editdata/{id}',[GambarController::class , 'edit'])->name('editedata');
+Route::post('/updatedata/{id}',[GambarController::class , 'update'])->name('updatedata');
+
+Route::get('beli/{id}',[sitecontroller::class ,'beli'])->name('beli');
+Route::post('/simpan',[sitecontroller::class , 'store'])->name('simpan');
+Route::get('selesai/{id}',[sitecontroller::class , 'delete'])->name('selesai');
+

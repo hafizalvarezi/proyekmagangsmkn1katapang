@@ -27,7 +27,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item"><a href="{{route('admin')}}">Home</a></li>
               <li class="breadcrumb-item active"></li>
             </ol>
           </div><!-- /.col -->
@@ -46,6 +46,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <table>
             <tr>
                 <td>Title :  <input type="text" name="nama" placeholder="Masukan Nama"></td>
+            </tr>
+            <tr>
+                <td>Harga :  <input type="text" name="harga" placeholder="Masukan Harga"></td>
             </tr>
             <tr>
                 <td>Gambar :<input type="file" name="gambar" placeholder="Masukan Gambar"></td>

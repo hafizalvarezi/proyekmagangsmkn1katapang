@@ -5,20 +5,19 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Uploadgambar extends Model
+class Pembelian extends Model
 {
-    protected $table = 'uploadgambar';
+    protected $table = 'pembelian';
     protected $primaryKey = 'id';
     protected $fillable = [
         'id',
-        'nama',
-        'gambar',
-        'harga',
+        'uploadgambar_id',
+        'nama_pembeli',
+        'alamat',
     ];
-    public function pembeli()
+
+    public function uploadgambar()
     {
-        return $this->hasMany(Pembeli::class);
+        return $this->belongsTo(Uploadgambar::class);
     }
-
-
 }

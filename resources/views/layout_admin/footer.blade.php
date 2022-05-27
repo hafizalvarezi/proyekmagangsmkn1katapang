@@ -12,7 +12,7 @@
 				<h3>About<span>PushTheme</span></h3>
 
 				<p class="footer-links">
-					<a href="#">Home</a>
+					<a href="{{route('admin')}}">Home</a>
 					|
 					<a href="#">Blog</a>
 					|

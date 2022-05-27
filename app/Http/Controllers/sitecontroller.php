@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Menu;
+use App\Models\Pembelian;
+use App\Models\Uploadgambar;
 use Illuminate\Http\Request;
 
 class sitecontroller extends Controller
@@ -21,19 +23,31 @@ class sitecontroller extends Controller
     public function contact(){
         return view('contact');
     }
-    public function shop1(){
-        return view('Shop.shop1');
+    public function shop(){
+        $dtGambar = Uploadgambar::simplePaginate(2);
+        return view('Shop.shop',compact('dtGambar'));
+    }
+    public function beli($id)
+    {
+        // $beli = Uploadgambar::all();
+        $menu = Uploadgambar::findorfail($id);
+        return view('pembelian.beli',compact('menu'));
+    }
+    public function store(Request $request)
+    {
+        //dd($request->all());
+        Pembelian::create([
+            'uploadgambar_id'=>$request->uploadgambar_id,
+            'nama_pembeli'=>$request->nama_pembeli,
+            'alamat'=>$request->alamat,
+        ]);
+        return redirect('shop');
     }
 
-    public function shop2(){
-        return view('Shop.shop2');
-    }
-
-    public function shop3(){
-        return view('Shop.shop3');
-    }
-    
-    public function shop4(){
-        return view('Shop.shop4');
+    public function delete($id)
+    {
+        $beli   = Pembelian::findorfail($id);
+        $beli->delete();
+        return back();
     }
 }

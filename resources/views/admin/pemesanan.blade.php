@@ -10,13 +10,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <style>
   .pagination {
     position: fixed;
-    top: 85%;
+    top: 80%;
     left: 20%;
 }
 .tambah {
-    position: sticky;
+    position: fixed;
     top: 20%;
-    left: 150%;
+    left: 90%;
 }
     </style>
 </head>
@@ -35,12 +35,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Data Gambar</h1>
+            <h1 class="m-0">Data Pesanan</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Data Gambar</li>
+              <li class="breadcrumb-item"><a href="{{route('admin')}}">Home</a></li>
+              <li class="breadcrumb-item active">Data Pesanan</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -52,36 +52,29 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <div class="content">
       <div class="container-fluid">
         <div class="row">
-  <table border="1" cellpadding= "5" cellspacing= "0">
-    <tr>     
+        <table align="center" border="10" cellpadding= "5" cellspacing= "0">
+    <tr align="center">     
       <td>Id</td>
-      <td>Nama Gambar</td>
-      <td>Gambar</td>
+      <td>Nama</td>
+      <td>Alamat</td>
+      <td>Nama</td>
+      <td>Menu</td>
       <td>Harga</td>
-      <td>Edit</td>
-    </tr>
-@foreach($dtGambar as $item)
+    </tr>   
+      @foreach ($dtbeli as $item)
     <tr>
       <td>{{$loop->iteration}}</td>
-      <td>{{$item->nama}}</td>
+      <td>{{$item->nama_pembeli}}</td>
+      <td>{{$item->alamat}}</td>
+      <td>{{$item->uploadgambar['nama']}}</td>
+      <td>{{$item->uploadgambar['harga']}}</td>
       <td>
-        <img src="{{asset('img/'.$item->gambar)}}" height="70px" width="70px" alt="" srcset="">
+        <a href="{{url('selesai',$item->id)}}">Selesai</a>
       </td>
-      <td>{{$item->harga}}</td>
-      <td>
-          <a href="{{url('editdata',$item->id)}}">Edit</a>|<a href="{{url('deletedata',$item->id)}}">Delete</a>
-      </td>
+    </tr>
+      @endforeach
+  </table>  
 
-</tr>
-@endforeach
-
-</table>
-<div class="tambah">
-<tr><a href="{{route('create_gambar')}}">Tambah Data</a></tr>
-</div>
-        </div>
-        <div class="pagination">
-          {{$dtGambar->links()}}
         </div>
       </div>
  

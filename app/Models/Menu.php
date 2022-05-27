@@ -14,4 +14,5 @@ class Menu extends Model
         'Menu',
         'Harga',
     ];
+
 }
