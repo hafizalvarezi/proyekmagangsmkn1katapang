@@ -1,0 +1,127 @@
+.logo{
+    text-decoration: none;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+    position: absolute;
+    top: 3%;
+}
+    .judul{
+      padding-top: 48px;
+      padding-bottom: 48px;
+      text-size-adjust: 18px;
+      text-align: center!important;
+      color: white;
+      position:absolute;
+      left: 45%;
+    }
+    .gaya{
+      position: absolute;
+      top: 132px;
+      left: 399px;
+    }
+    .logout{
+      position: absolute;
+      top: 90%;
+      right: 25px;
+    }
+
+    .logout a{
+      text-decoration: none;
+      color: rgb(255, 255, 255);
+      font-size: 18px;
+      font-weight: 400;
+      padding: 8px 15px;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+    .logout a:hover{
+        color: tan;
+    }
+    .back2{
+      position: absolute;
+      top: 89%;
+      }
+
+      .duhur {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: ghostwhite;
+        text-align: center;
+        position: absolute;
+        bottom: 270px;
+        left: 428px;
+        font-size: 24px;
+      }
+      .subuh{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: brown;
+        top: 500px;
+        position: absolute;
+        left: 600px;
+        font-size: 24px;
+      }
+      .kata{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: ghostwhite;
+        top: 444px;
+        position: absolute;
+        left: 390px;
+        font-size: 24px;
+      }
+    .tabel{
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+      position: absolute;
+      top: 223px;
+      left: 455px;
+    }
+    body {
+      background-image: url('/image/bg-web.jpg');
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: 1375px 770px;
+    }
+    .logo{
+      position: absolute;
+      left: 90px;
+      top: 1px;
+    }
+    .nav-link{
+      color: #fff;
+    }
+    *{
+        margin:0;
+        padding:0;
+        font-family:verdana;
+      }
+      #abc{
+        width:100%;
+        height:100vh;
+        background-image: url(img2.jpg);
+        background-size: cover;
+      }
+      nav{
+        width: 100%;
+        height: 50px;
+        background-color: #0005;
+        line-height: 50px;
+      }
+      nav ul{
+        float: right;
+        margin-right: 30px;
+      }
+      nav ul li{
+        list-style-type: none;
+        display: inline-block;
+        transition: 0.7s all;
+      }
+      nav ul li:hover{
+        background-color: tan;
+        color: black;
+      }
+      nav ul li a{
+        text-decoration: none;
+        color: #fff;
+        padding: 30px;
+        font-size: 14px;
+      }

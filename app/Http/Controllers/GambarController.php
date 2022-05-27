@@ -2,11 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Menu;
-use App\Models\Pembelian;
+use App\Models\Uploadgambar;
 use Illuminate\Http\Request;
 
-class AdminController extends Controller
+class GambarController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,8 +14,8 @@ class AdminController extends Controller
      */
     public function index()
     {
-        $dtmenu = Menu::paginate(5);
-        return view('admin.data',compact('dtmenu'));
+        $dtGambar = Uploadgambar::simplePaginate(4);
+        return view('admin.UploadGambar',compact('dtGambar'));
     }
 
     /**
@@ -26,7 +25,7 @@ class AdminController extends Controller
      */
     public function create()
     {
-        return view('admin.create');
+        return view('admin.create_gambar');
     }
 
     /**
@@ -37,12 +36,19 @@ class AdminController extends Controller
      */
     public function store(Request $request)
     {
-        //dd($request->all());
-        Menu::create([
-            'Menu'=>$request->Menu,
-            'Harga'=>$request->Harga,
-        ]);
-        return redirect('dtmenu');
+        $nm = $request->gambar;
+        $namaFile = $nm->getClientOriginalName();
+
+        $dtUpload = new Uploadgambar;
+        $dtUpload->nama = $request->nama;
+        $dtUpload->harga = $request->harga;
+        $dtUpload->gambar = $namaFile;
+
+        $nm->move(public_path().'/img', $namaFile);
+        $dtUpload->save();
+
+        return redirect('data_gambar');
+
     }
 
     /**
@@ -64,8 +70,8 @@ class AdminController extends Controller
      */
     public function edit($id)
     {
-        $menu   = Menu::find($id);
-        return view('admin.edit',compact('menu'));
+        $gambar   = Uploadgambar::find($id);
+        return view('admin.edit_gambar',compact('gambar'));
     }
 
     /**
@@ -77,9 +83,9 @@ class AdminController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $menu  = Menu::findorfail($id);
-        $menu->update($request->all());
-        return redirect('admin');
+        $gambar  = Uploadgambar::findorfail($id);
+        $gambar->update($request->all());
+        return redirect('data_gambar');
     }
 
     /**
@@ -90,15 +96,8 @@ class AdminController extends Controller
      */
     public function delete($id)
     {
-        $menu   = Menu::find($id);
-        $menu->delete();
+        $gambar   = Uploadgambar::find($id);
+        $gambar->delete();
         return back();
     }
-
-    public function pesanan()
-    {
-        $dtbeli = Pembelian::all();
-        return view('admin.pemesanan',compact('dtbeli'));
-    }
-
 }

@@ -1,0 +1,14 @@
+.pagination {
+    position: absolute;
+    top: 215px;
+    left: 308px;
+    border-radius: 14px;
+}
+body{
+background-image: url(../image/bg-web.jpg);
+color: white;
+}
+.tabel{
+    position: absolute;
+    color: white;
+}
