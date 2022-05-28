@@ -64,7 +64,6 @@ class siswacontroller extends Controller
         $data->delete();
         return redirect('list');
     }
-
     function showData($id)
     {
         $data= siswa::find($id);
