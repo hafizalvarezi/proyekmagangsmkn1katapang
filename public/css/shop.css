@@ -1,0 +1,50 @@
+.pagination1 {
+    position: absolute;
+    top: 398px;
+    left: 311px;
+    mix-blend-mode: luminosity;
+}
+body{
+background-image: url(../image/bg-web.jpg);
+color: white;
+}
+.tabel{
+    position: absolute;
+    color: white;
+}
+.beli a{
+    position: absolute;
+    left: 223px;
+    top: 112px;
+    color: tan;
+    background-color: brown;
+    border-radius: 10px;
+    font-size: 18px;
+    border: double;
+}
+.beli a:hover{
+    color: brown;
+    background-color: tan;
+}
+.beli2 a{
+    position: absolute;
+    left: 223px;
+    top: 312px;
+    color: tan;
+    background-color: brown;
+    border-radius: 10px;
+    font-size: 18px;
+    border: double;
+}
+.beli2 a:hover{
+    color: brown;
+    background-color: tan;
+}
+.bek{
+    position: absolute;
+    top: 590px;
+    left: 45px;
+}
+.bek a:hover{
+    color: tan;
+}

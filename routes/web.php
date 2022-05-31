@@ -29,7 +29,7 @@ Route::post('simpanregistrasi',[LoginController::class,'simpanregistrasi'])->nam
 Route::get('about',[sitecontroller::class,'about'])->name('about');
 Route::get('contact',[sitecontroller::class,'contact'])->name('contact');
 
-Route::get('shop',[sitecontroller::class,'shop'])->name('shop');
+
 
 Route::get('admin',[BerandaController::class,'index'])->name('admin');
 Route::get('dtmenu',[AdminController::class,'index'])->name('dtmenu');
@@ -42,6 +42,7 @@ Route::get('delete/{id}',[AdminController::class,'delete'])->name('delete');
 
 Route::group(['middleware' => ['auth']], function(){
     Route::get('home',[sitecontroller::class,'home'])->name('home');
+    Route::get('shop',[sitecontroller::class,'shop'])->name('shop');
 });
 
 Route::get('data_gambar',[GambarController::class,'index'])->name('data_gambar');
@@ -54,4 +55,6 @@ Route::post('/updatedata/{id}',[GambarController::class , 'update'])->name('upda
 Route::get('beli/{id}',[sitecontroller::class ,'beli'])->name('beli');
 Route::post('/simpan',[sitecontroller::class , 'store'])->name('simpan');
 Route::get('selesai/{id}',[sitecontroller::class , 'delete'])->name('selesai');
+
+Route::get('status/{id}',[AdminController::class , 'status'])->name('status');
 

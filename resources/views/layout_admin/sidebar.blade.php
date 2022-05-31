@@ -7,21 +7,11 @@
           <img src="{{asset('image/Admin.png')}}" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">Senja Kopi</a>
+          <a href="{{route('admin')}}" class="d-block">Senja Kopi</a>
         </div>
       </div>
 
-      <!-- SidebarSearch Form -->
-      <div class="form-inline">
-        <div class="input-group" data-widget="sidebar-search">
-          <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
-          <div class="input-group-append">
-            <button class="btn btn-sidebar">
-              <i class="fas fa-search fa-fw"></i>
-            </button>
-          </div>
-        </div>
-      </div>
+
 
       <!-- Sidebar Menu -->
       <nav class="mt-2">

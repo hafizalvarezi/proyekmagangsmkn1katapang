@@ -50,4 +50,6 @@ class sitecontroller extends Controller
         $beli->delete();
         return back();
     }
+
+
 }

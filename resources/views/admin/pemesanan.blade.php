@@ -55,22 +55,28 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <table align="center" border="10" cellpadding= "5" cellspacing= "0">
     <tr align="center">     
       <td>Id</td>
+      <td>Status</td>
       <td>Nama</td>
       <td>Alamat</td>
-      <td>Nama</td>
       <td>Menu</td>
       <td>Harga</td>
+      <td>Status</td>
     </tr>   
       @foreach ($dtbeli as $item)
     <tr>
       <td>{{$loop->iteration}}</td>
+      <td>
+        @if ($item->status == 1)
+        <a href="{{url('status',$item->id)}}">Telah Dikirim</a>
+        @else
+        <a href="{{url('status',$item->id)}}">Batal</a>
+        @endif
+      </td>
       <td>{{$item->nama_pembeli}}</td>
       <td>{{$item->alamat}}</td>
       <td>{{$item->uploadgambar['nama']}}</td>
-      <td>{{$item->uploadgambar['harga']}}</td>
-      <td>
-        <a href="{{url('selesai',$item->id)}}">Selesai</a>
-      </td>
+      <td>{{$item->uploadgambar['harga']}}</td>   
+      <td><label>{{ ($item->status == 1) ? 'Belum Dikirim' : 'Selesai'}}</label></td>
     </tr>
       @endforeach
   </table>  

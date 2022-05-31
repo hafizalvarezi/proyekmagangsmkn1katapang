@@ -1,7 +1,8 @@
 .pagination{
   position: absolute;
-  top: 180px;
-  left: 3%;
+  top: 156px;
+  left: 305px;
+  mix-blend-mode: luminosity;
 }
 
   .back{

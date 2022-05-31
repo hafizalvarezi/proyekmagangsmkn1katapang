@@ -97,8 +97,26 @@ class AdminController extends Controller
 
     public function pesanan()
     {
-        $dtbeli = Pembelian::all();
+        $dtbeli = Pembelian::latest()->get();
         return view('admin.pemesanan',compact('dtbeli'));
+    }
+
+    public function status($id)
+    {
+        $dtbeli = Pembelian::find($id);
+
+        $status_sekarang = $dtbeli->status;
+
+        if ($status_sekarang == 1) {
+            Pembelian::find($id)->update([
+                'status' =>0
+            ]);
+        }else{
+            Pembelian::find($id)->update([
+                'status' =>1 
+            ]);
+        }
+        return redirect('dtpesanan');
     }
 
 }

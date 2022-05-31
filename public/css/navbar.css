@@ -1,131 +1,11 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins',sans-serif;
-  }
-  body {
-    background-image: url('/image/bg-web.jpg');
-    background-size: 100%;
-    color: #fff;
-    background-repeat: no-repeat;
-    background-size: 2000px 1000px;
-  }
-  nav{
-    position: fixed;
-    width: 100%;
-    padding: 10px;
-    z-index: 12;
-  }
-  nav .menu{
-    background-color: black;
-    width: 1281px;
-    height: 64px;
-    position: inherit;
-    top: -2px;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
+.logo{
+  text-decoration: none;
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+  position: absolute;
+  top: 3%;
 }
-  
-.menu .logo a{
-    text-decoration: none;
-    color: #fff;
-    font-size: 35px;
-    font-weight: 600;
-    position: absolute;
-    top: 3%;
-  }
-  .menu ul{
-    display: inline-flex;
-  }
-  .menu ul li{
-    list-style: none;
-    margin-left: 7px;
-  }
-  .menu ul li:first-child{
-    margin-left: 0px;
-  }
-  .menu ul li a{
-    text-decoration: none;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 500;
-    padding: 8px 16px;
-    border-radius: 5px;
-    position: relative;
-    top: 6px;
-    transition: all 0.3s ease;
-  }
-  .menu ul li a:hover{
-    background: #fff;
-    color: black;
-  }
-  .img{
-    background: url('foto.jpg');
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    position: absolute;
-  }
-  .img::before{
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.4);
-  }
-  .center{
-    position: absolute;
-    top: 400%;
-    left: 53%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    padding: 0 20px;
-    text-align: center;
-  }
-  .center .title{
-    color: #fff;
-    font-size: 55px;
-    font-weight: 600;
-  }
-  .center .sub_title{
-    color: #fff;
-    font-size: 52px;
-    font-weight: 600;
-  }
-  .center .btns{
-    margin-top: 20px;
-  }
-  .center .btns button{
-    height: 55px;
-    width: 170px;
-    border-radius: 5px;
-    border: none;
-    margin: 0 10px;
-    border: 2px solid white;
-    font-size: 20px;
-    font-weight: 500;
-    padding: 0 10px;
-    cursor: pointer;
-    outline: none;
-    transition: all 0.3s ease;
-  }
-  .center .btns button:first-child{
-    color: #fff;
-    background: none;
-  }
-  .btns button:first-child:hover{
-    background: white;
-    color: black;
-  }
-  .center .btns button:last-child{
-    background: white;
-    color: black;
-  }
   .judul{
     padding-top: 48px;
     padding-bottom: 48px;
@@ -134,13 +14,6 @@
     color: white;
     position:absolute;
     left: 45%;
-  }
-
-  .tabel{
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    position: absolute;
-    bottom: -75px;
   }
   .gaya{
     position: absolute;
@@ -152,7 +25,7 @@
     top: 90%;
     right: 25px;
   }
-  
+
   .logout a{
     text-decoration: none;
     color: rgb(255, 255, 255);
@@ -162,12 +35,14 @@
     border-radius: 5px;
     transition: all 0.3s ease;
   }
-  
+  .logout a:hover{
+      color: tan;
+  }
   .back2{
     position: absolute;
     top: 89%;
     }
-  
+
     .duhur {
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       color: ghostwhite;
@@ -192,4 +67,76 @@
       position: absolute;
       left: 390px;
       font-size: 24px;
+    }
+  .tabel{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    position: absolute;
+    top: 120px;
+    left: 455px;
+    white-space: break-spaces;
+}
+  body {
+    background-image: url('/image/bg-web.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 1375px 770px;
+  }
+  .logo{
+    position: absolute;
+    left: 90px;
+    top: 1px;
+  }
+  .nav-link{
+    color: #fff;
+  }
+  *{
+      margin:0;
+      padding:0;
+      font-family:verdana;
+    }
+    #abc{
+      width:100%;
+      height:100vh;
+      background-image: url(img2.jpg);
+      background-size: cover;
+    }
+    .nap{
+        height: 65px;
+        line-height: 50px;
+        float: right;
+        margin-right: 30px;
+    }
+    nav ul li{
+      list-style-type: none;
+      display: inline-block;
+      transition: 0.7s all;
+    }
+    nav ul li a{
+      text-decoration: none;
+      color: #fff;
+      padding: 30px;
+      font-size: 14px;
+    }
+    nav ul{
+      float: right;
+      margin-right: 30px;
+    }
+    nav ul li a:hover{
+      color: black;
+      background-color: tan;
+    }
+    nav ul li{
+      list-style-type: none;
+      display: inline-block;
+      transition: 0.7s all;
+    }
+    nav ul li a{
+      text-decoration: none;
+      padding: 30px;
+      font-size: 14px;
+    }
+.nap a:hover{
+    background-color: tan;
+    color: black;
     }

@@ -18,6 +18,7 @@ return new class extends Migration
             $table->integer('uploadgambar_id');
             $table->string('nama_pembeli');
             $table->string('alamat',3000);
+            $table->integer('status');
             $table->timestamps();
         });
     }

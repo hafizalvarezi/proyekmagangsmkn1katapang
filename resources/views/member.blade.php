@@ -2,7 +2,7 @@
   <head>
     <title>Home</title>
     <link href="{{\Illuminate\Support\Facades\URL::asset('/css/navbar.css')}}" rel="stylesheet">
-    <meta charset="utf-8">  
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="footer.css">
@@ -18,6 +18,7 @@
       <img src="../image/logo1.png" height="50"/>
     </a>
       </div>
+      <div class="nap">
       <ul>
       <li><a href="{{route('about')}}">About</a></li>
         <li><a href="{{route('contact')}}">Contact</a></li>
@@ -33,9 +34,10 @@
   <path fill-rule="evenodd" d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z"/>
 </svg>
 <h6 >Logout</h6>
+</div>
 </a>
   </div>
-  <div class="gaya"> 
+  <div class="gaya">
     <img src=../image/senja.png width="500px">
   </div>
 <div class="duhur">
@@ -43,8 +45,9 @@
     <h3>Haii,{{Auth::user()->name}} </h3>
 </div>
 <p class="kata" style="font-family:times;">Terima kasih sudah menjadi bagian dari member kami</p>
-<div class="subuh"> 
+<div class="subuh">
 <p>Happy Enjoy !</p>
 </div>
+@include('footer')
 </body>
 </html>
