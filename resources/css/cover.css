@@ -6,7 +6,6 @@
 
 html, body {
   height: 90vh;
-  background-image: url(../image/w4-m.jpg);
   background-image: url(../image/w4-min.jpg);
   font-family: 'Balsamiq Sans', sans-serif;
 }
@@ -117,15 +116,15 @@ body {
   .card .row {
     grid-template-columns: repeat(auto-fit,minmax(70%, 1fr));
   }
-
+  
   .card {
     padding: 20px;
   }
-
+  
   .card h2 {
     font-size: 34px;
   }
-
+  
   .card .row input[type="submit"] {
     width: 100%;
   }

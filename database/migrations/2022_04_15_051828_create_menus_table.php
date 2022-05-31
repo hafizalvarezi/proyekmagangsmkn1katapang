@@ -17,6 +17,8 @@ return new class extends Migration
             $table->id();
             $table->string('Menu',100)->unique();
             $table->string('Harga');
+            $table->string('Menu',100);
+            $table->integer('Harga');
             $table->timestamps();
         });
     }

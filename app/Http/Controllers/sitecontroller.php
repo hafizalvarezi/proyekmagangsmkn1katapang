@@ -15,7 +15,7 @@ class sitecontroller extends Controller
         return view('site.index',compact('dtmenu'));
     }
     public function home(){
-        return view('member');
+        return view('member');       
     }
     public function about(){
         return view('about');
@@ -24,7 +24,7 @@ class sitecontroller extends Controller
         return view('contact');
     }
     public function shop(){
-        $dtGambar = Uploadgambar::Paginate(1);
+        $dtGambar = Uploadgambar::simplePaginate(2);
         return view('Shop.shop',compact('dtGambar'));
     }
     public function beli($id)

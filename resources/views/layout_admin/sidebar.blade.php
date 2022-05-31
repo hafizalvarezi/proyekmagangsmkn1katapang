@@ -50,6 +50,8 @@
               <li class="nav-item">
                 <a href="{{route('dtpesanan')}}" class="nav-link active">
                   Data Pesanan
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Data Menu</p>
                 </a>
               </li>
         </ul>

@@ -1,0 +1,16 @@
+<nav>
+    <div class="menu">
+      <div class="logo">
+      <a href="{{route('user')}}">
+      <img src="../image/logo1.png" height="50"/>
+    </a>
+      </div>
+      <ul>
+      <li><a href="{{route('about')}}">About</a></li>
+        <li><a href="{{route('contact')}}">Contact</a></li>
+        <li><a href="{{route('login')}}">Login</a></li>
+        <li><a href="{{route('registrasi')}}">Join Now</a></li>
+      </ul>
+    </div>
+    {{$slot}}
+  </nav>
