@@ -109,12 +109,6 @@ td, th {
     text-align: center;
 
 }
-.page{
-    position: absolute;
-    top: 80%;
-    left: 23%;
-    color: aliceblue;
-}
 .tb1{
     text-align: left;
 }
@@ -165,4 +159,14 @@ td, th {
     left: 260px;
     font-size: 15px;
     width: 100px;
+}
+.btne{
+    text-decoration: none;
+    color: wheat;
+}
+.page{
+    top: 550px;
+    left: 295px;
+    position: absolute;
+    width: 50px;
 }

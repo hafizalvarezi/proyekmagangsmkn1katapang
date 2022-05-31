@@ -32,7 +32,6 @@
         <thead class="table-dark">
                 <tr align="center">
                     <td>ID</td>
-                    <td>NIS</td>
                     <td>Nama</td>
                     <td>Jenis Kelamin</td>
                     <td>Jurusan</td>
@@ -42,7 +41,6 @@
               @foreach ($dtsiswa as $item)
                 <tr align="center">
                     <td>{{$item['id']}}</td>
-                    <td>{{$item->nis}}</td>
                     <td>{{$item->nama}}</td>
                     <td>{{$item->jkel}}</td>
                     <td>{{$item->jrs}}</td>
@@ -114,6 +112,5 @@
     </div>
   </footer>
 </div>
-
 </body>
 </html>

@@ -20,7 +20,7 @@ class UploadGambarController extends Controller
 
     public function gurued()
     {
-        $dataGambar=UploadGambar::all();
+        $dataGambar=UploadGambar::simplePaginate(4);
         return view('gurued',compact('dataGambar'));
     }
     public function simpangambar(Request $request)
@@ -43,7 +43,7 @@ class UploadGambarController extends Controller
        return redirect('gurued');
     }
 
-    function delete($no)
+    function hapus1($no)
     {
         $dataGambar=uploadgambar::find($no);
         $dataGambar->delete();

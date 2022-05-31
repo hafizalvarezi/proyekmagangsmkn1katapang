@@ -29,7 +29,13 @@
                 <li>
                     <a href="/kasad">
                         <span class="icon"><i class="fa-solid fa-coins"></i></span>
-                        <span class="btn3">&nbsp; Keuangaan Sekolah</span>
+                        <span class="btn3">&nbsp; Kas Sekolah</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/komentar">
+                        <span class="icon"><i class="fa-solid fa-comment"></i></span>
+                        <span class="btn3">&nbsp; Contact</span>
                     </a>
                 </li>
                 <li>
@@ -63,7 +69,7 @@
                 <tr align="center">
                     <td>{{$loop->iteration}}</td>
                     <td>
-                        <img src="{{asset ( 'image/'.$item->gambar) }}" height="50px" width="50px" alt="not found" srcset="">
+                        <img src="{{asset ( 'image/'.$item->gambar) }}" height="70px" width="70px" alt="not found" srcset="">
                     </td>
                     <td>{{$item->nuptk}}</td>
                     <td>{{$item->nama}}</td>  
@@ -73,6 +79,9 @@
                 @endforeach
                 </table>
             </div>
+        </div>
+        <div class="page">
+          {{ $dataGambar->links() }}
         </div>
     </div>
 </body>

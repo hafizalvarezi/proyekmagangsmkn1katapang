@@ -41,7 +41,7 @@ class KeuanganController extends Controller
             'harga'=>$request->harga,
             'keterangan'=>$request->keterangan,
             ]);
-        return redirect('/kas');
+        return redirect('/kasad');
     }
     public function siswa(){
         $siswa = siswa::all();

@@ -17,11 +17,8 @@
 <body>
     <div class="container">
         <div class="title">
-            <h1 class="tit">HALAMAN DAFTAR KEUANGAN 2022</h1>
+            <h1 class="tit">HALAMAN DATA KAS SEKOLAH 2022</h1>
             <h2 class="tit2">*DATA AKAN DIRISET SETAHUN SEKALI*</h2>
-        </div>
-        <div class="bayar">
-            <a href="{{route('uang')}}"><button type = "button" class="tom">Bayar</button></a>
         </div>
         <div class="tabel1">
             <table class="adm1" border="1px" align="center" width="700">
@@ -29,13 +26,13 @@
                     <th>NIS</th>
                     <th>NAMA</th>
                     <th>HARGA</th>
-                    <th>KETERANGAN</th>
+                    <th>KETERANGAN</th>git
                 </tr>
                 @foreach ($data as $item)
                 <tr align="center">
                     <td>{{$item->siswa->nis}}</td>
                     <td>{{$item->siswa->nama}}</td>
-                    <td>{{$item->harga}}</td>
+                    <td>RP {{$item->harga}}</td>
                     <td class="em">{{$item->keterangan}}</td>
                 </tr>
                 @endforeach

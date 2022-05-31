@@ -83,7 +83,7 @@
         <button type="button" class="btn btn-dark"> <a href="https://ppdb.disdik.jabarprov.go.id">https://ppdb.disdik.jabarprov.go.id</a></button>
         </div>
         <div class="button11">
-        <button type="button" class="btn btn-dark"> <a href="https://www.facebook.com/decka.comeback">Info Jabar</a></button>
+        <button type="button" class="btn btn-dark"> <a href="#">Info Jabar</a></button>
         </div>
       </div>
     </div>
@@ -92,6 +92,7 @@
 
 
 <!-- Footer -->
+<!-- https://www.facebook.com/decka.comeback -->
 
 <div class="footer">
   <footer class="row row-cols-5 py-5 my-5 border-top">

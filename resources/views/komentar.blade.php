@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/9d085cb130.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="list.css">
-    <title>Dashboard</title>
+    <link rel="stylesheet" href="admin.css">
+    <title>Komentar</title>
 </head>
 <body>
     <div class="container">
@@ -22,13 +22,13 @@
                 </li>
                 <li>
                     <a href="/list">
-                        <span class="icon"><i class="fa-solid fa-address-card"></i></span>
-                        <span class="btn2">&nbsp; List Data Siswa</span>
+                        <span class="icon"><i class="fa-solid fa-address-card"></i></i></span>
+                        <span class="btn2">&nbsp;  Data Siswa</span>
                     </a>
                 </li>
                 <li>
                     <a href="/kasad">
-                        <span class="icon"><i class="fa-solid fa-coins"></i></span>
+                        <span class="icon"><i class="fa-solid fa-coins"></i></i></span>
                         <span class="btn3">&nbsp; Kas Sekolah</span>
                     </a>
                 </li>
@@ -41,7 +41,7 @@
                 <li>
                     <a href="/gurued">
                         <span class="icon"><i class="fa-solid fa-chalkboard-user"></i></span>
-                        <span class="btn4">&nbsp; Data guru</span>
+                        <span class="btn3">&nbsp;Data Guru</span>
                     </a>
                 </li>
             </ul>
@@ -53,40 +53,36 @@
             </div>
         </div>
         <div class="huhe">
+            <div class="tuing">
+                <h1>HALAMAN Contact/Pesan</h1>
+            </div>
+        </div>
+        <div class="not">
             <div class="tinot">
                 <h2><i class="fa-solid fa-bell"></i> Notifikasi</h2>
             </div>
-            <div class="but">
-            <a href="{{route('daftar')}}"><button type="button" class="but1">Daftarkan Siswa</button></a>
-        </div>
-        <div class="table">
-        <table class="tbl" border="1px" align="center" width="1116">
+            <div class="not-1">
+            <table class="adm1" border="1px" align="center" width="700">
                 <tr align="center">
-                    <td>ID</td>
-                    <td>NIS</td>
-                    <td>Nama</td>
-                    <td>Jenis Kelamin</td>
-                    <td>Jurusan</td>
-                    <td>Tanggal Lahir</td>
-                    <td>Admin</td>
+                    <th>NAMA</th>
+                    <th>KELAS/GURU MAPEL</th>
+                    <th>EMAIL</th>
+                    <th>PESAN</th>
                 </tr>
                 @foreach ($dtsiswa as $item)
                 <tr align="center">
-                    <td>{{$item->id}}</td>
-                    <td>{{$item->nis}}</td>
-                    <td>{{$item->nama}}</td>
-                    <td>{{$item->jkel}}</td>
-                    <td>{{$item->jrs}}</td>
-                    <td>{{$item->ttg}} {{$item->bulan}} {{$item->tahun}}</td>
-                    <td><a class="btne" href={{"edit/".$item['id']}}>Edit |</a> <a class="btne" href={{"delete/".$item['id']}}>Hapus</a></td>
+                    <td>{{$item->namleng}}</td>
+                    <td>{{$item->kls}}</td>
+                    <td class="em">{{$item->email}}</td>
+                    <td class="tb1">{{$item->pesan}}</td>
                 </tr>
                 @endforeach
-            </table>
-            </div>
-            <div class="page">
-             {{ $dtsiswa->links() }}
+                </table>
             </div>
         </div>
     </div>
+    <div class="page">
+{{ $dtsiswa->links() }}
+        </div>
 </body>
 </html>

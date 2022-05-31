@@ -29,7 +29,13 @@
                 <li>
                     <a href="/kasad">
                         <span class="icon"><i class="fa-solid fa-coins"></i></span>
-                        <span class="btn3">&nbsp; Keuangaan Sekolah</span>
+                        <span class="btn3">&nbsp; Kas Sekolah</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/komentar">
+                        <span class="icon"><i class="fa-solid fa-comment"></i></span>
+                        <span class="btn3">&nbsp; Contact</span>
                     </a>
                 </li>
                 <li>
@@ -46,6 +52,9 @@
                 </form>
             </div>
         </div>
+        <div class="but">
+            <a href="{{route('uang')}}"><button type="button" class="but1">Tambahkan Data</button></a>
+        </div>
         <div class="tabel1">
             <table class="adm1" border="1px" align="center" width="700">
                 <tr class="tab" align="center">
@@ -59,7 +68,7 @@
                 <tr align="center">
                     <td>{{$item->siswa['nis']}}</td>
                     <td>{{$item->siswa['nama']}}</td>
-                    <td>{{$item->harga}}</td>
+                    <td>Rp {{$item->harga}}</td>
                     <td class="em">{{$item->keterangan}}</td>
                     <td><a href="{{"hapus/".$item['id']}}" class="btne">Hapus</a></td>
                 </tr>

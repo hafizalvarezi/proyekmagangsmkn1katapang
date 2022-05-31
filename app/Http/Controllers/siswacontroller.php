@@ -22,6 +22,10 @@ class siswacontroller extends Controller
         $dtsiswa = siswa::all();
         return view('layout.dashboard',compact('dtsiswa'));
     }
+    public function komentar(){
+        $dtsiswa = pesan::Paginate(10);
+        return view('komentar',compact('dtsiswa'));
+     }
     public function about(){
         $dtsiswa = siswa::all();
         return view('layout.about');
@@ -114,7 +118,7 @@ class siswacontroller extends Controller
          return back()->with('loginError','Login Failed!');
      }
      public function list(){
-        $dtsiswa = siswa::all();
+        $dtsiswa = siswa::simplePaginate(10);
         return view('list',compact('dtsiswa'));
      }
      public function logout(Request $request){

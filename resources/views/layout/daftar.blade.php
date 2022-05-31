@@ -29,13 +29,18 @@
     <input type="radio" name="jkel" value="Perempuan" id="Perempuan" >Perempuan</input><br>
     <br>
     <label for="jrs"><b>Jurusan</b></label><br>
-    <select name="jrs" id="jrs" class="categ">
-      <option value="Tidak Punya">-- PILIH --</option>
+    <select name="jrs" id="jrs" class="categ" required>
+    <option value="">-- PILIH JURUSAN --</option>
       <option value="Rekayasa Perangkat Lunak">Rekayasa Perangkat Lunak</option>
       <option value="MultiMedia">MultiMedia</option>
       <option value="Teknik Komputer Jaringan">Teknik Komputer Jaringan</option>
+      <option value="Elektro">Elektro</option>
+      <option value="Otomotif">Otomotif</option>
+      <option value="Teknik Gambar Mesin">Teknik Gambar Mesin</option>
+      <option value="Teknik Kendaraan Ringan">Teknik Kendaraan Ringan</option>
+      <option value="Tekstil">Tekstil</option>
     </select>
-    <p>Jika tidak punya Jurusan, Bisa dikosongkan saja</p>
+    <br>
     <br>
     <label for="ttg"><b>Tanggal Lahir : </b></label><br>
     <td>
@@ -68,6 +73,7 @@
 						<?php endfor; ?>
 					</select>
     </td> 
+    <br><br>
 
     <button class="btnsub" type="submit">Daftar</button>
   </div>

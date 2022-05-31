@@ -9,7 +9,7 @@
 }
 body{
     min-width: 100vh;
-    background: rgb(2,0,36);
+    background:rgb(181, 171, 171);
     background: linear-gradient(rgba(118,184,213,0.92));
 }
 html, body {
@@ -87,7 +87,7 @@ html, body {
     font-family: 'Bebas Neue', cursive;
 }
 .huhe{
-    color: #eee;
+    color: black;
     position: absolute;
     left: 490px;
     top: 1px;
@@ -130,7 +130,7 @@ td, th {
     text-align: left;
 }
 .tinot{
-    color: white;
+    color: black;
     position: absolute;
     top: 70px;
     left: 260px;

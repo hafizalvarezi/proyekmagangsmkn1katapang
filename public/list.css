@@ -9,11 +9,13 @@
 }
 body{
     min-width: 100vh;
-    background: rgb(10, 7, 73);
+    background:rgb(181, 171, 171);
     background: linear-gradient(rgba(118,184,213,0.92));
+    
 }
 html, body {
-    margin: 0; height: 100%; overflow: hidden
+    margin: 0; height: 100%;
+    
 }
 .title{
     color: white;
@@ -133,4 +135,35 @@ html, body {
     font-size: 50px;
     border-radius: 15px;
     font-family: 'Bebas Neue', cursive;
+}
+.but1{
+    background: #4CAF50;
+    border: none;
+    border-style: solid;
+    border-radius: 20px;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    border-color: black;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Koulen', cursive;
+    position: absolute;
+    right: 1px;
+    top: 1px;
+}
+.but1:hover{
+    background: #0c7a0f;
+}
+.tinot{
+    color: black;
+    position: absolute;
+    top: 26px;
+    left: 290px;
+    letter-spacing: 1px;
+}
+.page{
+    top: 504px;
+    left: 295px;
+    position: absolute;
 }

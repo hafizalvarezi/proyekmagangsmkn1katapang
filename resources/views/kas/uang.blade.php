@@ -31,7 +31,21 @@
             <br><br>
 
     <label for="harga"><b>Jumlah</b></label><br>
-    <select name="harga" id="harga">
+    <input type="number" placeholder="Masukan Jumlah" name="harga" pattern="1234567890" onKeyPress="if(this.value.length==10) return false;" required><br><br>
+
+    <label for="keterangan"><b>Keterangan :</b></label><br>
+    <input type="text" placehorder="Masukan Keterangan Disini" name="keterangan" required><br><br>
+
+    <button class="btnsub" type="submit">SUBMIT</button>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <a href="/kasad"><button type="button" class="cancelbtn">Kembali</button></a>
+  </div>
+</form> 
+</body>
+</html>
+    <!-- <select name="harga" id="harga">
       <option value="Rp 5.000">Rp 5.000</option>
       <option value="Rp 10.000">Rp 10.000</option>
       <option value="Rp 15.000">Rp 15.000</option>
@@ -54,16 +68,4 @@
       <option value="Rp 100.000">Rp 100.000</option>
       <option value="Rp 1.000">Pilihan Kapitalis</option>
       <option value="Rp 50.000.000">Pilihan Sultan</option>
-    </select><br><br>
-    <label for="keterangan"><b>Keterangan :</b></label><br>
-    <input type="text" placehorder="Masukan Keterangan Disini" name="keterangan" required><br>
-
-    <button class="btnsub" type="submit">SUBMIT</button>
-  </div>
-
-  <div class="container" style="background-color:#f1f1f1">
-    <a href="/kas"><button type="button" class="cancelbtn">Kembali</button></a>
-  </div>
-</form> 
-</body>
-</html>
+    </select><br><br> -->
