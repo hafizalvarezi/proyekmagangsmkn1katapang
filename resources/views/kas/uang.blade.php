@@ -29,7 +29,7 @@
     </label><br>
 
     <label for="harga" align="left"><b>*Nominal</b></label>
-    <input type="text" placeholder="Rp.XXXXXX" name="harga" required><br>
+    <input type="number" placeholder="XXXXXX" name="harga" required><br>
     
     <label for="keterangan" align="left"><b>*Keterangan</b></label>
     <input type="text" placehorder="Masukkan Keterangan" name="keterangan" required><br>

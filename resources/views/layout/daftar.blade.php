@@ -32,8 +32,7 @@
       <option value="MultiMedia">MultiMedia</option>
       <option value="Teknik Komputer Jaringan">Teknik Komputer Jaringan</option>
     </select>
-    <p>Jika tidak punya Jurusan, Bisa dikosongkan saja</p>
-    <br>
+    <br><br>
     <label for="ttg"><b>Tanggal Lahir : </b></label><br>
     <td>
 					<select name="ttg" required>

@@ -59,6 +59,9 @@
             <div class="but">
             <a href="{{route('daftar')}}"><button type="button" class="dft">Daftarkan Siswa</button></a>
         </div>
+        <div class="tinot">
+                <h2><i class="fa-solid fa-bell"></i> Notifikasi</h2>
+            </div>
         <div class="table">
         <table class="tbl" border="1px" align="center" width="1116">
                 <tr align="center">
@@ -72,13 +75,13 @@
                 </tr>
                 @foreach ($dtsiswa as $item)
                 <tr align="center">
-                    <td>{{$item['id']}}</td>
+                    <td>{{$loop->iteration}}</td>
                     <td>{{$item->nis}}</td>
                     <td>{{$item->nama}}</td>
                     <td>{{$item->jkel}}</td>
                     <td>{{$item->jrs}}</td>
                     <td>{{$item->ttg}} {{$item->bulan}} {{$item->tahun}}</td>
-                    <td><a class="btne" href={{"edit/".$item['id']}}>Edit |</a> <a class="btne" href={{"delete/".$item['id']}}>Hapus</a></td>
+                    <td><a class="btne" href={{"edit/".$item['id']}}>Edit |</a> <a class="btne" href={{"hps/".$item['id']}}>Hapus</a></td>
                 </tr>
                 @endforeach
             </table>

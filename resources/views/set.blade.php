@@ -75,9 +75,9 @@
                 <tr align="center">
                     <td>{{$item->siswa->nis}}</td>
                     <td>{{$item->siswa->nama}}</td>
-                    <td>{{$item->harga}}</td>
+                    <td>Rp.{{$item->harga}}</td>
                     <td>{{$item->keterangan}}</td>
-                    <td><a class="btne" href={{"delete/".$item['id']}}>Hapus</a></td>
+                    <td><a class="btne" href={{"hapus/".$item['id']}}>Hapus</a></td>
                 </tr>
                 @endforeach
                 </table>

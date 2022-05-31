@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: grey;
+    font-family: 'Bebas Neue', cursive;
+    overflow: hidden;
+}
+.title{
+    position: absolute;
+    right: 550px;
+}
+.adm1{
+    background: #5463FF;
+    color: white;
+    border: 1px solid white;
+    border-collapse: collapse;
+    position: absolute;
+    top: 80px;
+    left: 700px;
+    transform: translate(-50%,-50%);
+    empty-cells: show;
+    width: 1030px;
+    table-layout: fixed; 
+}
+
+.adm1 tr,td {
+    font-family: 'Bebas Neue', cursive;
+}
+.tab th{
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    letter-spacing: 2px;
+}
+.tab{
+    background: 5463FF;
+}
+.button{
+    margin: auto;
+    padding: auto;
+}
+.tom{
+    background: #5463FF;
+    border: none;
+    border-style: solid;
+    border-radius: 20px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    border-color: black;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Koulen', cursive;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+.tom:hover{
+    background: #0c7a0f;
+}
+.back{
+    background: #bb082f;
+    border: none;
+    border-style: solid;
+    border-radius: 20px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    border-color: black;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Koulen', cursive;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}
+.back:hover{
+    background: #e7758e;
+}
+.tit2{
+    text-align: center;
+}

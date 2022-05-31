@@ -12,7 +12,7 @@ body{
     background-color: #2c3e50;
     margin: 100%;
     margin: 0;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 .title-satu{
     position: absolute;
@@ -101,7 +101,7 @@ a.active,a:hover{
 }
 .tbl{
     position: absolute;
-    top: 15%;
+    top: 96px;
     background-color: aliceblue;
     color: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -131,14 +131,14 @@ a.active,a:hover{
     color: white;
 }
 footer {
-    right: 1%;
-    left: 1%;
+    right: 0px;
+    left: 0px;
     position: absolute;
-    width: 100%;
+    width: 1423px;
     text-align: center;
     background-color: #1A132F;
     color: white;
-    top: 110%;
+    top: 800px;
 }
 .teks{
     color: white;

@@ -44,7 +44,7 @@ Route::get('/dashboard', [siswacontroller::class, 'dashboard'])->name('dashboard
 Route::get('/about', [siswacontroller::class, 'about'])->name('about');
 Route::get('/contact', [siswacontroller::class, 'contact'])->name('contact');
 Route::get('/galeri', [siswacontroller::class, 'galeri'])->name('galeri');
-Route::get('delete/{id}', [siswacontroller::class, 'delete']);
+Route::get('hps/{id}', [siswacontroller::class, 'delete']);
 Route::get('edit/{id}', [siswacontroller::class, 'showData']);
 Route::get('/list', [siswacontroller::class, 'list']);
 Route::get('/komentar', [siswacontroller::class, 'komentar']);
@@ -66,13 +66,14 @@ Route::post('/loginmur', [KeuanganController::class, 'authenticate']);
 
 // KEUANGAN //
 Route::post('/simpankas', [KeuanganController::class, 'simpankas'])->name('simpankas');
+Route::get('kas', [KeuanganController::class, 'kas'])->name('kas');
 Route::get('/uang', [KeuanganController::class, 'uang'])->name('uang');
 Route::get('/set', [KeuanganController::class, 'set'])->name('set');
 Route::get('/dashboard', [KeuanganController::class, 'dashboard'])->name('dashboard');
 Route::get('/about', [KeuanganController::class, 'about1'])->name('about');
 Route::get('/contact', [KeuanganController::class, 'contact1'])->name('contact');
 Route::get('/galeri', [KeuanganController::class, 'galeridata'])->name('galeri');
-Route::get('delete/{id}', [KeuanganController::class, 'delete']);
+Route::get('hapus/{id}', [KeuanganController::class, 'delete']);
 Route::get('editt/{id}', [KeuanganController::class, 'showData']);
 Route::post('update/{id}', [KeuanganController::class, 'update']);
 
@@ -80,4 +81,5 @@ Route::post('update/{id}', [KeuanganController::class, 'update']);
 Route::get('/gambar',[UploadGambarController::class,'gambar']);
 Route::get('/create',[UploadGambarController::class,'create']);
 Route::post('/simpangambar', [UploadGambarController::class,'simpangambar'])->name('simpangambar');
-Route::get('delete/{id}', [UploadGambarController::class, 'delete']);
+Route::get('delet/{id}', [UploadGambarController::class, 'delete']);
+Route::get('/uru', [UploadGambarController::class, 'uru'])->name('uru');

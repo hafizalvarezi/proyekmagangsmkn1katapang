@@ -150,6 +150,14 @@ tr:hover {
     position: absolute;
     top: 15px;
     left: 750px;
-    font-size: 11px;
-    width: 150px;
+    font-size: 15px;
+    width: 550px;
+}
+.tinot{
+    color: rgb(26, 26, 35);
+    position: absolute;
+    top: 39px;
+    left: 325px;
+    letter-spacing: 1px;
+    font-size: small;
 }

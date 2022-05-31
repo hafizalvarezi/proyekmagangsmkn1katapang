@@ -6,11 +6,18 @@ use Illuminate\Http\Request;
 
 class UploadGambarController extends Controller
 {
+    
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
+    public function uru()
+    {
+        $dataGambar=UploadGambar::simplePaginate(2);
+        return view('layout.uru',compact('dataGambar'));
+    }
+    
     public function gambar()
     {
         $dataGambar=UploadGambar::simplePaginate(5);

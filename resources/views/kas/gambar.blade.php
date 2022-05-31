@@ -78,7 +78,7 @@
                     <td>{{$item->nuptk}}</td>
                     <td>{{$item->nama}}</td>  
                     <td>{{$item->mapel}}</td>
-                    <td><a class="btne" href={{"delete/".$item['id']}}>Hapus</a></td>
+                    <td><a class="btne" href={{"delet/".$item['id']}}>Hapus</a></td>
                 </tr>
                 @endforeach
                 </table>

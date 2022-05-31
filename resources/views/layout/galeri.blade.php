@@ -9,24 +9,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="/background/ktpang.png" />
     <title>SMKN 1 KATAPANG</title>
 </head>
 <body>
 <img class="title-satu" src="background/title.png" alt="">
-<nav>
-<a style="text-decoration:none" href="https://thohirdev.com"></a>
-        <input type="checkbox" id="check">
-        <label for="check">
-            <i class="fas fa-clock fa-xs"></i>
-        </label>
-        
+    <nav>
         <ul>
             <li><a style="text-decoration:none" href="/dashboard">Home</a></li>
             <li><a style="text-decoration:none" href="/about">About</a></li>
             <li><a style="text-decoration:none" href="/contact">Contact</a></li>
             <li><a style="text-decoration:none" class="active" href="/galeri">Galeri</a></li>
             <li><a style="text-decoration:none" href="/mur">Daftar Siswa</a></li>
-            <li><a style="text-decoration:none;" href="#">Profile</a></li>
+            <li><a style="text-decoration:none"href="/uru">Daftar Guru</a></li>
+            <li><a style="text-decoration:none" class="pro" href="/kas">Info Keuangan</a></li>
         </ul>
     </nav>
         </div>
@@ -112,7 +108,7 @@ Lapangan di SMKN 1 Katapang ada 2.Yang pertama sering dipakai untuk upacara dan 
                     <div class="card-header" align="center">Kompetensi Favorit</div>
                     <div class="card-body text-center">
                     <div class="text-center">
-  <img src="foto/mm.png" class="rounded"  height="200px" width="250px">
+  <img src="foto/multi.png" class="rounded"  height="200px" width="250px">
  <h3>MultiMedia</h3>
  Multimedia adalah jurusan komputer untuk menyajikan dan menggabungkan teks, suara, gambar, animasi, audio, dan video dengan alat bantu.</div>
                     </div>

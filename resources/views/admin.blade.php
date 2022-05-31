@@ -22,12 +22,12 @@
                 </li>
                 <li>
                     <a href="/list">
-                        <span class="icon"><i class="fa-solid fa-address-card"></i></i></span>
-                        <span class="btn2">&nbsp; Data Siswa</span>
+                        <span class="icon"><i class="fa-solid fa-address-card"></i></span>
+                        <span class="btn2">&nbsp;Data Siswa</span>
                     </a>
                 </li>
                 <li>
-                    <a href="/set">
+                <a href="/set">
                         <span class="icon"><i class="fa-solid fa-money-bill-1-wave"></i></span>
                         <span class="btn3">&nbsp; Keuangan</span>
                     </a>
@@ -39,15 +39,14 @@
                     </a>
                 </li>
                 <li>
-                    <a href="/gambar">
+                <a href="/gambar">
                         <span class="icon"><i class="fa-solid fa-chalkboard-user"></i></span>
                         <span class="btn3">&nbsp;Data Guru</span>
-                    </a>
+                    </a>    
                 </li>
             </ul>
             <div class="log">
                 <form action="/logout" method="post">
-                @csrf
                 <button type="submit" class="btnlog"><i class="fa-solid fa-right-to-bracket"></i> Log Out</button>
                 </form>
             </div>

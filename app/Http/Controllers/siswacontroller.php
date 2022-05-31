@@ -28,7 +28,7 @@ class siswacontroller extends Controller
         return view('layout.about');
     }
     public function mur(){  
-         $dtsiswa = siswa::simplePaginate(2);
+         $dtsiswa = siswa::simplePaginate(1);
         return view('layout.mur', compact('dtsiswa'));
     }
     public function eg(){

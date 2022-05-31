@@ -104,6 +104,10 @@ class KeuanganController extends Controller
         
         return redirect('/dashboard');
     }
+    public function kas(){
+        $data = Keuangan::simplePaginate(10);
+        return view('layout.kas',compact('data'));
+    }
 
     public function dashboard(){
         $dtsiswa = murid::all();

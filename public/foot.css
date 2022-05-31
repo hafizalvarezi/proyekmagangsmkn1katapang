@@ -11,6 +11,7 @@ body{
     font-family: montserrat;
     margin: 100%;
     margin: 0;
+    overflow-x: hidden;
 }
 .title-satu{
     position: absolute;
@@ -132,14 +133,14 @@ a.active,a:hover{
     color: white;
 }
 footer {
-    right: 1%;
-    left: 1%;
+    right: 0px;
+    left: 0px;
     position: absolute;
-    width: 100%;
+    width: 1414px;
     text-align: center;
     background-color: #1A132F;
     color: white;
-    top: 142%;
+    top: 950px;
 }
 .teks{
     color: white;
