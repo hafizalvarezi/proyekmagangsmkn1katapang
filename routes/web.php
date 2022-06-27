@@ -17,7 +17,13 @@ $router->get('/', function () use ($router) {
     return $router->app->version();
 });
 
-$router->group(['prefix'=>'api'], function() use ($router){
+//LoginRegister
+$router->get('simpanregistrasi' ,['uses' => 'LoginController@simpanregistrasi']);
+$router->post('register' ,['uses' => 'LoginController@register']);
+$router->get('login' ,['uses' => 'LoginController@index']);
+$router->post('postlogin' ,['uses' => 'LoginController@postlogin']);
+
+$router->group(['prefix'=> 'petshop','middleware'=>'user'] , function() use ($router){
 
     // Melihatkan Semua Data
     $router->get('kontak',['uses' => 'KontakController@index']);
@@ -33,4 +39,16 @@ $router->group(['prefix'=>'api'], function() use ($router){
 
     // Membuat Data/ Menambahkan Data
     $router->post('kontak',['uses' => 'KontakController@create']);
+
+    //Menunjukan Data Pets
+    $router->get('pet' ,['uses' => 'PetController@index']);
+
+    //Membuat Data Pets
+    $router->post('pet' ,['uses' => 'PetController@create']);
+    
+    //Mengedit Data Pets
+    $router->put('pet/{id}' ,['uses' => 'PetController@update']);
+    
+    //Menghapus Data Pets
+    $router->delete('pet/{id}' ,['uses' => 'PetController@destroy']);
 });
